@@ -7,3 +7,6 @@
 .metadata/.plugins/org.eclipse.core.resources/.projects/CODE/.markers
 .metadata/.plugins/org.eclipse.core.resources/.history/9b/20fa395fec4000101c6dab9782b2cfff
 .metadata/.plugins/org.eclipse.core.resources/.history/e/e05d395fec4000101c6dab9782b2cfff
+.metadata/.log
+.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml
+.metadata/version.ini
