@@ -3,3 +3,5 @@
 .metadata/.plugins/org.eclipse.cdt.ui/global-build.log
 .metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml
 .metadata/.plugins/org.eclipse.cdt.ui/global-build.log
+.metadata/.plugins/org.eclipse.cdt.make.ui/dialog_settings.xml
+.metadata/.plugins/org.eclipse.core.resources/.projects/CODE/.markers
