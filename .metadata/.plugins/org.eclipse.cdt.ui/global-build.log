@@ -62,3 +62,23 @@ Finished building: default.size.stdout
  
 Finished building: CODE.list
  
+14:59:40 **** Incremental Build of configuration Debug for project CODE ****
+make -j20 all 
+arm-none-eabi-gcc -o "CODE.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\kaidc\Documents\Github\zap_em__blast_em\CODE\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CODE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CODE.elf
+ 
+arm-none-eabi-size  CODE.elf 
+arm-none-eabi-objdump -h -S CODE.elf  > "CODE.list"
+   text	   data	    bss	    dec	    hex	filename
+  22932	    604	   2420	  25956	   6564	CODE.elf
+Finished building: default.size.stdout
+ 
+Finished building: CODE.list
+ 
+16:17:14 **** Incremental Build of configuration Debug for project CODE ****
+make -j20 all 
+arm-none-eabi-size  CODE.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22932	    604	   2420	  25956	   6564	CODE.elf
+Finished building: default.size.stdout
+ 
