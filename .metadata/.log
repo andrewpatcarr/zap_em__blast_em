@@ -2354,3 +2354,62 @@ and then try again.
 java.lang.Exception: Cannot execute this command while the target is running.\nUse the "interrupt" command to stop the target\nand then try again.
 	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
 	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+!SESSION 2025-06-06 15:06:18.135 -----------------------------------------------
+eclipse.buildId=Version 1.18.1
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/andrewcarr/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/andrewcarr/.eclipse_keyring
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-06-06 15:06:28.953
+!MESSAGE Log4j2 initialized with config file /Users/andrewcarr/Documents/zap_em__shoot_em/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-06-06 15:06:41.480
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-06-06 15:06:50.194
+!MESSAGE Indexed 'CODE' (34 sources, 132 headers) in 11.7 sec: 13,987 declarations; 75,865 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0.27%)
+
+!ENTRY org.eclipse.core.resources 4 77 2025-06-06 15:13:38.271
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-06-06 15:13:38.273
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-06-06 15:13:38.273
+!MESSAGE /Users/andrewcarr/Documents/zap_em__shoot_em/CODE overlaps the location of another project: 'CODE'
+
+!ENTRY org.eclipse.core.resources 4 77 2025-06-06 15:15:50.583
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-06-06 15:15:50.584
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-06-06 15:15:50.584
+!MESSAGE /Users/andrewcarr/Documents/zap_em__shoot_em/CODE overlaps the location of another project: 'CODE'
+
+!ENTRY org.eclipse.core.resources 4 77 2025-06-06 15:38:32.099
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-06-06 15:38:32.103
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-06-06 15:38:32.104
+!MESSAGE /Users/andrewcarr/Documents/zap_em__shoot_em/CODE overlaps the location of another project: 'CODE'
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2025-06-06 16:10:51.699
+!MESSAGE Error in final launch sequence:
+
+Device debug script
+!STACK 1
+org.eclipse.core.runtime.CoreException: Device debug script
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Device debug script
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 0 2025-06-06 16:10:51.715
+!MESSAGE Device debug script
+!SUBENTRY 2 com.st.stm32cube.ide.mcu.debug.launch 4 0 2025-06-06 16:10:51.717
+!MESSAGE Device debug script

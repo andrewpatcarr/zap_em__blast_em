@@ -35,32 +35,6 @@ void controller_task_run(ControllerTask *controller_task)
 
 }
 
-void read_adc_channels_scan_mode(ADC_HandleTypeDef *hadc,
-                                  int32_t *adc_val_6,
-                                  int32_t *adc_val_7)
-{
-    HAL_ADC_Start(hadc);
-
-
-//    // Discard ADC4
-//    if (HAL_ADC_PollForConversion(hadc, 10) == HAL_OK)
-//        (void)HAL_ADC_GetValue(hadc);
-//
-//    // Discard ADC5
-//    if (HAL_ADC_PollForConversion(hadc, 10) == HAL_OK)
-//        (void)HAL_ADC_GetValue(hadc);
-
-    // Read ADC6
-    if (HAL_ADC_PollForConversion(hadc, 10) == HAL_OK)
-        *adc_val_6 = HAL_ADC_GetValue(hadc);
-
-    // Read ADC7
-    if (HAL_ADC_PollForConversion(hadc, 10) == HAL_OK)
-        *adc_val_7 = HAL_ADC_GetValue(hadc);
-
-    HAL_ADC_Stop(hadc);
-}
-
 
 // init stuff and zero pot
 void controller_task_state_0_init(ControllerTask *controller_task)
@@ -69,11 +43,7 @@ void controller_task_state_0_init(ControllerTask *controller_task)
     HAL_TIM_Encoder_Start(controller_task->htim_encoder, TIM_CHANNEL_ALL);
     enable(controller_task->motor);
 
-    int32_t adc_val_6 = 0, adc_val_7 = 0;
-    HAL_Delay(1);
-    read_adc_channels_scan_mode(controller_task->hadc, &adc_val_6, &adc_val_7);
-
-    controller_task->pot_zero = (controller_task->color == 0) ? adc_val_7 : adc_val_6;
+    controller_task->pot_zero = controller_task->adc_val;
 
     controller_task->state = 1;
 }
@@ -84,26 +54,24 @@ void controller_task_state_1_calc_vel(ControllerTask *controller_task)
 	int32_t low_thres = controller_task->pot_zero - controller_task->cw_deadzone;
 
     // read adc
-    int32_t adc_val_6 = 0, adc_val_7 = 0;
-    HAL_Delay(1);
-    read_adc_channels_scan_mode(controller_task->hadc, &adc_val_6, &adc_val_7);
 
-    int32_t adc_val = (controller_task->color == 0) ? adc_val_7 : adc_val_6;
+
+
 
     // calc vel des
     const float MAX_ADC = 4095.0f;
     const float MAX_VELOCITY = 8.0f;
 
     float desired_velocity = 0.0f;
-    if (adc_val > high_thres){
-    	adc_val += high_thres;
-        adc_val -= controller_task->pot_zero;
-        desired_velocity = ((float)adc_val / MAX_ADC) * MAX_VELOCITY;
+    if (controller_task->adc_val > high_thres){
+    	controller_task->adc_val += high_thres;
+    	controller_task->adc_val -= controller_task->pot_zero;
+        desired_velocity = ((float)controller_task->adc_val / MAX_ADC) * MAX_VELOCITY;
     }
-    else if (adc_val < low_thres){
-        	adc_val -= low_thres;
-            adc_val -= controller_task->pot_zero;
-            desired_velocity = ((float)adc_val / MAX_ADC) * MAX_VELOCITY;
+    else if (controller_task->adc_val < low_thres){
+		controller_task->adc_val -= low_thres;
+		controller_task->adc_val -= controller_task->pot_zero;
+		desired_velocity = ((float)controller_task->adc_val / MAX_ADC) * MAX_VELOCITY;
     }
     else {
         desired_velocity = 0.0f;

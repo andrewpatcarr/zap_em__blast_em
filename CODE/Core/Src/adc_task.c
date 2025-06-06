@@ -11,6 +11,8 @@
 #include "controller_task.h"
 #include "photoresistor_task.h"
 
+static uint16_t dma_buffer[4];
+
 // A function to run the appropriate state of the task
 void adc_task_run(ADCTask *adc_task)
 {    // Check for a valid state
@@ -38,20 +40,14 @@ void adc_task_run(ADCTask *adc_task)
 void adc_task_state_0_init(ADCTask *adc_task){
 
 	adc_task->state = 1;
+	HAL_ADC_Start_DMA(adc_task->hadc,
+	                      (uint32_t*)dma_buffer,
+	                      4);
 }
 
 void adc_task_state_1_read(ADCTask *adc_task){
-	HAL_ADC_Start(adc_task->hadc);
-
-	// Wait for first conversion (ADC6)
-	if (HAL_ADC_PollForConversion(adc_task->hadc, 10) == HAL_OK) {
-		adc_task->blue_contr_ptr->adc_val = HAL_ADC_GetValue(adc_task->hadc); // 6
-	}
-
-	// Wait for second conversion (ADC7)
-	if (HAL_ADC_PollForConversion(adc_task->hadc, 10) == HAL_OK) {
-		adc_task->red_contr_ptr->adc_val = HAL_ADC_GetValue(adc_task->hadc);
-	}
+//	HAL_ADC_Start(adc_task->hadc);
+//
 //	// Wait for first conversion (ADC4)
 //	if (HAL_ADC_PollForConversion(adc_task->hadc, 10) == HAL_OK) {
 //		adc_task->red_photor_ptr->adc_val = HAL_ADC_GetValue(adc_task->hadc); //
@@ -61,9 +57,23 @@ void adc_task_state_1_read(ADCTask *adc_task){
 //	if (HAL_ADC_PollForConversion(adc_task->hadc, 10) == HAL_OK) {
 //		adc_task->blue_photor_ptr->adc_val = HAL_ADC_GetValue(adc_task->hadc);
 //	}
-
-
-	HAL_ADC_Stop(adc_task->hadc);
+//	// Wait for first conversion (ADC6)
+//	if (HAL_ADC_PollForConversion(adc_task->hadc, 10) == HAL_OK) {
+//		adc_task->blue_contr_ptr->adc_val = HAL_ADC_GetValue(adc_task->hadc); // 6
+//	}
+//
+//	// Wait for second conversion (ADC7)
+//	if (HAL_ADC_PollForConversion(adc_task->hadc, 10) == HAL_OK) {
+//		adc_task->red_contr_ptr->adc_val = HAL_ADC_GetValue(adc_task->hadc);
+//	}
+//
+//
+//
+//	HAL_ADC_Stop(adc_task->hadc);
+	adc_task->red_photor_ptr->adc_val   = dma_buffer[0];
+	adc_task->blue_photor_ptr->adc_val  = dma_buffer[1];
+	adc_task->red_contr_ptr->adc_val   = dma_buffer[2];
+	adc_task->blue_contr_ptr->adc_val    = dma_buffer[3];
 
 
 }
