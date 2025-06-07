@@ -125,17 +125,35 @@ void game_task_state_2_play(GameTask *game_task)
 	}
 
 }
-// A function to implement state 3
-// Ends the game when the score threshold has been met
-// Prints messages and sets sound flags
+
 void game_task_state_3_end(GameTask *game_task)
 {
-	// lowkey might not be needed
-	// does need to reset everything but could do in above
-//	game_task->play_flag == 0;
-	game_task->state = 1;
-	game_task->score_blue = 0;
-	game_task->score_red = 0;
-	HAL_Delay(5000);
-}
+    uint32_t start_time = 0;
+    uint8_t timer_started = 0;
 
+    uint32_t current_time = __HAL_TIM_GET_COUNTER(game_task->htim_dt);
+
+    if (!timer_started)
+    {
+        start_time = current_time;
+        timer_started = 1;
+
+        // Reset game variables
+        game_task->play_flag = 0;
+        game_task->state = 1;
+        game_task->score_blue = 0;
+        game_task->score_red = 0;
+    }
+
+    uint32_t elapsed_ticks = current_time - start_time;  // safe for 32-bit wrap-around
+
+    const uint32_t delay_ticks = 420000000;  // 5 seconds at 84 MHz timer clock
+
+    if (elapsed_ticks >= delay_ticks)
+    {
+        timer_started = 0; // reset for next call
+
+        // Delay done, proceed with next steps
+        // e.g., game_task->state = NEXT_STATE;
+    }
+}

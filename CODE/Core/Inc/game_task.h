@@ -31,6 +31,7 @@ struct GameTask
     int32_t 	score_blue_prev;
     int32_t		score_thresh;
     int32_t		num;
+    TIM_HandleTypeDef 	*htim_dt;
     SoundTask	*sound_task_ptr;
     PhotoresistorTask *red_photoresistor_task_ptr;
     PhotoresistorTask *blue_photoresistor_task_ptr;
