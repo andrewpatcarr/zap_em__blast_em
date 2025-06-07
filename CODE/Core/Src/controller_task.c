@@ -62,16 +62,20 @@ void controller_task_state_1_calc_vel(ControllerTask *controller_task)
     const float MAX_ADC = 4095.0f;
     const float MAX_VELOCITY = 8.0f;
 
+    int32_t adc_val_here = controller_task->adc_val;
+
+
+
     float desired_velocity = 0.0f;
-    if (controller_task->adc_val > high_thres){
-    	controller_task->adc_val += high_thres;
-    	controller_task->adc_val -= controller_task->pot_zero;
-        desired_velocity = ((float)controller_task->adc_val / MAX_ADC) * MAX_VELOCITY;
+    if (adc_val_here > high_thres){ //&& (adc_val_here+high_thres)<4095
+    	adc_val_here += high_thres;
+    	adc_val_here -= controller_task->pot_zero;
+        desired_velocity = ((float)adc_val_here / MAX_ADC) * MAX_VELOCITY;
     }
-    else if (controller_task->adc_val < low_thres){
-		controller_task->adc_val -= low_thres;
-		controller_task->adc_val -= controller_task->pot_zero;
-		desired_velocity = ((float)controller_task->adc_val / MAX_ADC) * MAX_VELOCITY;
+    else if (adc_val_here < low_thres){ // && (adc_val_here-low_thres)>0
+    	adc_val_here -= low_thres;
+    	adc_val_here -= controller_task->pot_zero;
+		desired_velocity = ((float)adc_val_here / MAX_ADC) * MAX_VELOCITY;
     }
     else {
         desired_velocity = 0.0f;

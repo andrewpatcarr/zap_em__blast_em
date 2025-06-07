@@ -92,7 +92,7 @@ PhotoresistorTask red_photoresistor_task = {.state = 0,
 											.num_states = 3,
 											.hit_flag = 0,
 											.adc_val = 0,
-											.thresh = 3000,
+											.thresh = 3600,
 											.state_list = {&photoresistor_task_state_0_init,
 													       &photoresistor_task_state_1_look,
 														   &photoresistor_task_state_2_hit}
@@ -101,7 +101,7 @@ PhotoresistorTask blue_photoresistor_task = {.state = 0,
 											.num_states = 3,
 											.hit_flag = 0,
 											.adc_val = 0,
-											.thresh = 3000,
+											.thresh = 3600,
 											.state_list = {&photoresistor_task_state_0_init,
 													       &photoresistor_task_state_1_look,
 														   &photoresistor_task_state_2_hit}
@@ -164,7 +164,7 @@ ControllerTask blue_controller_task = {.color = 1, // blue is fighter 2
 									   .k_p = -6,
 									   .k_d = 0,
 									   .cw_deadzone = 150,		// good at 150
-									   .ccw_deadzone = 800,		// good at 600
+									   .ccw_deadzone = 150,		// good at 600
 									   .adc_val = 0,
 									   .htim_encoder = &htim3,		// encoder timer for blue motor
 									   .htim_dt = &htim2,

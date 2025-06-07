@@ -72,8 +72,8 @@ void adc_task_state_1_read(ADCTask *adc_task){
 //	HAL_ADC_Stop(adc_task->hadc);
 	adc_task->red_photor_ptr->adc_val   = dma_buffer[0];
 	adc_task->blue_photor_ptr->adc_val  = dma_buffer[1];
-	adc_task->red_contr_ptr->adc_val   = dma_buffer[2];
-	adc_task->blue_contr_ptr->adc_val    = dma_buffer[3];
+	adc_task->blue_contr_ptr->adc_val   = dma_buffer[2];
+	adc_task->red_contr_ptr->adc_val    = dma_buffer[3];
 
 
 }
