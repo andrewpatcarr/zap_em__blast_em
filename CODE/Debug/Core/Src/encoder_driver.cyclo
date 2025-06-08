@@ -1,0 +1,2 @@
+../Core/Src/encoder_driver.c:15:6:setup_encoder	1
+../Core/Src/encoder_driver.c:20:6:read_encoder	3
