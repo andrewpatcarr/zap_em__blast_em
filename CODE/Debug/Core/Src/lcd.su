@@ -1,9 +1,0 @@
-../Core/Src/lcd.c:22:13:lcd_send_nibble	32	static
-../Core/Src/lcd.c:35:13:lcd_send_byte	16	static
-../Core/Src/lcd.c:40:6:lcd_send_command	16	static
-../Core/Src/lcd.c:45:6:lcd_send_data	16	static
-../Core/Src/lcd.c:49:6:lcd_force_backlight_on	24	static
-../Core/Src/lcd.c:54:6:lcd_init	8	static
-../Core/Src/lcd.c:72:6:lcd_clear	8	static
-../Core/Src/lcd.c:77:6:lcd_set_cursor	16	static
-../Core/Src/lcd.c:83:6:lcd_print	16	static

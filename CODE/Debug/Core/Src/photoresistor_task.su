@@ -1,4 +1,0 @@
-../Core/Src/photoresistor_task.c:14:6:photoresistor_task_run	16	static
-../Core/Src/photoresistor_task.c:35:6:photoresistor_task_state_0_init	16	static
-../Core/Src/photoresistor_task.c:41:6:photoresistor_task_state_1_look	16	static
-../Core/Src/photoresistor_task.c:51:6:photoresistor_task_state_2_hit	16	static

@@ -1,7 +1,0 @@
-../Core/Src/sound_task.c:11:6:sound_task_run	3
-../Core/Src/sound_task.c:30:6:sound_task_state_0_init	1
-../Core/Src/sound_task.c:36:6:sound_task_state_1_wait	5
-../Core/Src/sound_task.c:52:6:sound_task_state_2_laser	1
-../Core/Src/sound_task.c:60:6:sound_task_state_3_hit	1
-../Core/Src/sound_task.c:65:6:sound_task_state_4_win	1
-../Core/Src/sound_task.c:71:6:sound_task_state_5_start	1

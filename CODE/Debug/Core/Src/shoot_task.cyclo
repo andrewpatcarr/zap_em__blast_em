@@ -1,5 +1,0 @@
-../Core/Src/shoot_task.c:14:6:shoot_task_run	3
-../Core/Src/shoot_task.c:35:6:shoot_task_state_0_init	4
-../Core/Src/shoot_task.c:43:6:shoot_task_state_1_wait	5
-../Core/Src/shoot_task.c:53:6:shoot_task_state_2_unshield	5
-../Core/Src/shoot_task.c:65:6:shoot_task_state_3_shoot	2

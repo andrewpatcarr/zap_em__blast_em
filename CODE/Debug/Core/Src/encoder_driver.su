@@ -1,2 +1,0 @@
-../Core/Src/encoder_driver.c:15:6:setup_encoder	16	static
-../Core/Src/encoder_driver.c:20:6:read_encoder	24	static
