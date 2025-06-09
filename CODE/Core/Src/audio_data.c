@@ -1,5 +1,7 @@
 // Audio data: 51264 frames, 24000 Hz, 2 channels
+
 #include <stdint.h>
+
 const int16_t audio_buf[51264] = {
     0,
     0,
@@ -51266,3 +51268,4 @@ const int16_t audio_buf[51264] = {
     0,
     0
 };
+

@@ -14,6 +14,15 @@ typedef struct SoundTask SoundTask; // forward declaration
 // function must have no input arguments and have no return
 typedef void (*sound_fcn_t)(SoundTask *sound_task);
 
+#define SAMPLE_RATE   44100U
+#define PWM_FREQ      88200U
+#define STEP_RATIO    (PWM_FREQ / SAMPLE_RATE)  // 2
+
+//extern const int16_t audio_buf[];   // from audio_data.c
+extern const uint32_t audio_buf_len; // length N
+
+extern volatile uint32_t sample_index;
+extern volatile uint8_t  pwm_div_count;
 
 // A datatype for a structure to hold task configuration and state.
 // Additional fields can be added as desired.

@@ -1,62 +1,3 @@
-/**
- * @mainpage Zap'Em Blast'Em Robots
- *
- * @section creators_sec Creators
- * - Kai De La Cruz
- * - Andrew Carr
- *
- * @section intro_sec Introduction
- * Zap'Em Blast'Em Robots is an embedded game system for the STM32 platform.
- * Inspired by Rock'em Sock'em Robots, this game replaces fists with IR lasers.
- * Robots battle in real time using sensors, controllers, and a state machine.
- *
- * @section gameplay_sec Game Premise
- * Two robots face off in a laser-tag match. Instead of punching, they "zap"
- * each other using IR beams. Each robot has light sensors to detect hits.
- * The first to land enough successful shots wins the match.
- *
- * @section features_sec Features
- * - Real-time analog sensor reads using DMA
- * - Modular task system for clear code organization
- * - State-based control for responsive gameplay
- * - Easily extendable for AI or multiplayer support
- * - Doxygen-based documentation for maintainability
- *
- * @section files_sec File Overview
- * - adc_task.c/h: Handles ADC and DMA data acquisition
- * - controller_task.c/h: Manages game logic and reactions
- * - photoresistor_task.c/h: Reads IR sensor input
- * - main.c: Initializes system and launches tasks
- *
- * @section tech_sec Technology Stack
- * - STM32F4 series microcontroller
- * - STM32CubeIDE (Eclipse-based)
- * - HAL drivers with DMA for ADC
- * - Doxygen for auto-generated docs
- *
- * @section usage_sec How to Use
- * 1. Build the project in STM32CubeIDE and flash it to the robot's board.
- * 2. Power the robots and align sensors and IR emitters.
- * 3. Start the game by triggering the user input or main controller.
- * 4. Watch the robots duel in laser-tag combat!
- *
- * @section mechanicaldesign_sec Mechanical Design
- * built it
- *
- * @section electricaldesign_sec Electrical Design
- * built it
- *
- * @section softwaredesign_sec Software Design
- * built it
- *
- * @section future_sec Future Ideas
- * - Wireless scoring and multiplayer support
- * - AI-controlled bots
- * - UART serial output for real-time HUD or scoreboard
- */
-
-
-
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
@@ -90,6 +31,7 @@
 #include "photoresistor_task.h"
 #include "adc_task.h"
 #include "encoder_driver.h"
+
 #include <stdint.h>
 /* USER CODE END Includes */
 
@@ -119,6 +61,7 @@ TIM_HandleTypeDef htim2;
 TIM_HandleTypeDef htim3;
 TIM_HandleTypeDef htim4;
 TIM_HandleTypeDef htim5;
+TIM_HandleTypeDef htim9;
 
 /* USER CODE BEGIN PV */
 uint8_t red_held = 0, blue_held = 0;
@@ -295,6 +238,8 @@ ADCTask adc_task = {.state = 0,
 								   &adc_task_state_1_read}
 
 };
+
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -308,6 +253,7 @@ static void MX_TIM4_Init(void);
 static void MX_TIM5_Init(void);
 static void MX_TIM2_Init(void);
 static void MX_ADC1_Init(void);
+static void MX_TIM9_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -354,7 +300,10 @@ int main(void)
   MX_TIM5_Init();
   MX_TIM2_Init();
   MX_ADC1_Init();
+  MX_TIM9_Init();
   /* USER CODE BEGIN 2 */
+  HAL_TIM_PWM_Start_IT(&htim2, TIM_CHANNEL_1);
+
   HAL_TIM_PWM_Start_IT(&htim1, TIM_CHANNEL_1);
   HAL_TIM_PWM_Start_IT(&htim1, TIM_CHANNEL_2);
   HAL_TIM_PWM_Start_IT(&htim1, TIM_CHANNEL_3);
@@ -397,7 +346,7 @@ int main(void)
   {
 	  adc_task_run(&adc_task);
 	  game_task_run(&game_task);
-//	  sound_task_run(&sound_task);
+	  sound_task_run(&sound_task);
 
 	  // set play flag by each player holding button for 2 seconds
 	  if (red_held && blue_held && game_task.play_flag == 0)
@@ -680,6 +629,7 @@ static void MX_TIM2_Init(void)
 
   /* USER CODE END TIM2_Init 0 */
 
+  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
   TIM_MasterConfigTypeDef sMasterConfig = {0};
   TIM_OC_InitTypeDef sConfigOC = {0};
 
@@ -687,11 +637,20 @@ static void MX_TIM2_Init(void)
 
   /* USER CODE END TIM2_Init 1 */
   htim2.Instance = TIM2;
-  htim2.Init.Prescaler = 95;
+  htim2.Init.Prescaler = 0;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim2.Init.Period = 4294967295;
+  htim2.Init.Period = 1088;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim2, &sClockSourceConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
   if (HAL_TIM_PWM_Init(&htim2) != HAL_OK)
   {
     Error_Handler();
@@ -865,6 +824,44 @@ static void MX_TIM5_Init(void)
   /* USER CODE BEGIN TIM5_Init 2 */
 
   /* USER CODE END TIM5_Init 2 */
+
+}
+
+/**
+  * @brief TIM9 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM9_Init(void)
+{
+
+  /* USER CODE BEGIN TIM9_Init 0 */
+
+  /* USER CODE END TIM9_Init 0 */
+
+  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
+
+  /* USER CODE BEGIN TIM9_Init 1 */
+
+  /* USER CODE END TIM9_Init 1 */
+  htim9.Instance = TIM9;
+  htim9.Init.Prescaler = 0;
+  htim9.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim9.Init.Period = 2177;
+  htim9.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim9.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim9) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim9, &sClockSourceConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM9_Init 2 */
+
+  /* USER CODE END TIM9_Init 2 */
 
 }
 

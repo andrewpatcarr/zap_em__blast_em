@@ -6,6 +6,12 @@
  */
 
 #include "sound_task.h"
+#include "audio_data.h"
+#include <stdio.h>
+
+volatile uint32_t sample_index   = 0;
+volatile uint8_t  pwm_div_count  = 0;
+const uint32_t    audio_buf_len  = 51264;
 
 // A function to run the appropriate state of the task
 void sound_task_run(SoundTask *sound_task)
@@ -29,7 +35,7 @@ void sound_task_run(SoundTask *sound_task)
 // A function to initialize the task
 void sound_task_state_0_init(SoundTask *sound_task)
 {
-    //add init stuff
+
 
 }
 

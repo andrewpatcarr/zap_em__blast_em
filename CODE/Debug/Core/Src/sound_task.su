@@ -1,7 +1,7 @@
-../Core/Src/sound_task.c:11:6:sound_task_run	16	static
-../Core/Src/sound_task.c:30:6:sound_task_state_0_init	16	static
-../Core/Src/sound_task.c:36:6:sound_task_state_1_wait	16	static
-../Core/Src/sound_task.c:52:6:sound_task_state_2_laser	16	static
-../Core/Src/sound_task.c:60:6:sound_task_state_3_hit	16	static
-../Core/Src/sound_task.c:65:6:sound_task_state_4_win	16	static
-../Core/Src/sound_task.c:71:6:sound_task_state_5_start	16	static
+../Core/Src/sound_task.c:17:6:sound_task_run	16	static
+../Core/Src/sound_task.c:36:6:sound_task_state_0_init	16	static
+../Core/Src/sound_task.c:42:6:sound_task_state_1_wait	16	static
+../Core/Src/sound_task.c:58:6:sound_task_state_2_laser	16	static
+../Core/Src/sound_task.c:66:6:sound_task_state_3_hit	16	static
+../Core/Src/sound_task.c:71:6:sound_task_state_4_win	16	static
+../Core/Src/sound_task.c:77:6:sound_task_state_5_start	16	static

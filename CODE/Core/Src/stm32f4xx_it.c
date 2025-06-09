@@ -20,6 +20,8 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "stm32f4xx_it.h"
+#include "sound_task.h"
+#include "audio_data.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 /* USER CODE END Includes */
@@ -56,6 +58,7 @@
 
 /* External variables --------------------------------------------------------*/
 extern DMA_HandleTypeDef hdma_adc1;
+extern TIM_HandleTypeDef htim2;
 /* USER CODE BEGIN EV */
 
 /* USER CODE END EV */
@@ -197,6 +200,35 @@ void SysTick_Handler(void)
 /* For the available peripheral interrupt handler names,                      */
 /* please refer to the startup file (startup_stm32f4xx.s).                    */
 /******************************************************************************/
+
+/**
+  * @brief This function handles TIM2 global interrupt.
+  */
+void TIM2_IRQHandler(void)
+{
+  /* USER CODE BEGIN TIM2_IRQn 0 */
+	if (__HAL_TIM_GET_FLAG(&htim2, TIM_FLAG_UPDATE)) {
+	    __HAL_TIM_CLEAR_IT(&htim2, TIM_IT_UPDATE);
+
+	    // every N PWM ticks, step one audio sample
+	if (++pwm_div_count >= STEP_RATIO) {
+		pwm_div_count = 0;
+
+		// fetch the next sample from your C array
+		int16_t s = audio_buf[sample_index++];
+		if (sample_index >= audio_buf_len) sample_index = 0;  // loop
+
+					// map signed 16-bit [-32768..+32767] to CCR range [0..ARR]
+		uint32_t duty = ((uint32_t)(s + 32768) * (htim2.Init.Period)) / 65535;
+		__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, duty);
+	    }
+	}
+  /* USER CODE END TIM2_IRQn 0 */
+  HAL_TIM_IRQHandler(&htim2);
+  /* USER CODE BEGIN TIM2_IRQn 1 */
+
+  /* USER CODE END TIM2_IRQn 1 */
+}
 
 /**
   * @brief This function handles EXTI line[15:10] interrupts.
