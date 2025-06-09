@@ -1,5 +1,6 @@
 var NAVTREEINDEX277 =
 {
+"structPhotoresistorTask.html":[4,0,51],
 "structPrcCfgInf__Type.html":[3,2,0,0,0,0,0,0,0,1,0,0,0,0,1],
 "structPrcCfgInf__Type.html":[3,2,0,0,0,1,0,0,0,1,0,0,0,0,1],
 "structPwrModCtl__Type.html":[3,2,0,0,0,0,0,0,0,1,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX277 =
 "structTIM__TypeDef.html#adb72f64492a75e780dd2294075c70fed":[3,91,0,2,17,3],
 "structTIM__TypeDef.html#af17f19bb4aeea3cc14fa73dfa7772cb8":[3,91,0,2,17,0],
 "structTIM__TypeDef.html#af6225cb8f4938f98204d11afaffd41c9":[3,91,0,2,17,12],
-"structTIM__TypeDef.html#af6aca2bbd40c0fb6df7c3aebe224a360":[3,91,0,2,17,20],
-"structTIM__TypeDef.html#afdfa307571967afb1d97943e982b6586":[3,91,0,2,17,11]
+"structTIM__TypeDef.html#af6aca2bbd40c0fb6df7c3aebe224a360":[3,91,0,2,17,20]
 };

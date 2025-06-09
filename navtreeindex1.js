@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"CODE_2Drivers_2STM32F4xx__HAL__Driver_2Inc_2stm32f4xx__hal__def_8h_source.html":[5,0,0,1,1,0,5],
 "CODE_2Drivers_2STM32F4xx__HAL__Driver_2Inc_2stm32f4xx__hal__dma_8h.html":[5,0,0,1,1,0,6],
 "CODE_2Drivers_2STM32F4xx__HAL__Driver_2Inc_2stm32f4xx__hal__dma_8h_source.html":[5,0,0,1,1,0,6],
 "CODE_2Drivers_2STM32F4xx__HAL__Driver_2Inc_2stm32f4xx__hal__dma__ex_8h.html":[5,0,0,1,1,0,7],
@@ -92,8 +93,8 @@ var NAVTREEINDEX1 =
 "dir_eb238deede51952d5f8f40459089908c.html":[5,0,0,0,1],
 "encoder__driver_8h_source.html":[5,0,0,0,0,2],
 "files.html":[5,0],
-"functions.html":[4,2,0,0],
 "functions.html":[4,2,0],
+"functions.html":[4,2,0,0],
 "functions_a.html":[4,2,0,1],
 "functions_b.html":[4,2,0,2],
 "functions_c.html":[4,2,0,3],
@@ -116,8 +117,8 @@ var NAVTREEINDEX1 =
 "functions_t.html":[4,2,0,20],
 "functions_u.html":[4,2,0,21],
 "functions_v.html":[4,2,0,22],
-"functions_vars.html":[4,2,1,0],
 "functions_vars.html":[4,2,1],
+"functions_vars.html":[4,2,1,0],
 "functions_vars_a.html":[4,2,1,1],
 "functions_vars_b.html":[4,2,1,2],
 "functions_vars_c.html":[4,2,1,3],
@@ -147,8 +148,8 @@ var NAVTREEINDEX1 =
 "functions_x.html":[4,2,0,24],
 "functions_z.html":[4,2,0,25],
 "game__task_8h_source.html":[5,0,0,0,0,3],
-"globals.html":[5,1,0,0],
 "globals.html":[5,1,0],
+"globals.html":[5,1,0,0],
 "globals_a.html":[5,1,0,1],
 "globals_b.html":[5,1,0,2],
 "globals_c.html":[5,1,0,3],
@@ -235,10 +236,10 @@ var NAVTREEINDEX1 =
 "group__ADC__Exported__Functions__Group2.html":[3,92,3,6,1],
 "group__ADC__Exported__Functions__Group3.html":[3,92,3,6,2],
 "group__ADC__Exported__Functions__Group4.html":[3,92,3,6,3],
-"group__ADC__Exported__Macros.html":[3,92,4,2],
 "group__ADC__Exported__Macros.html":[3,92,3,2],
-"group__ADC__Exported__Macros.html#ga650073de508d335d0a1c7bf9b4d07afe":[3,92,3,2,4],
+"group__ADC__Exported__Macros.html":[3,92,4,2],
 "group__ADC__Exported__Macros.html#ga650073de508d335d0a1c7bf9b4d07afe":[3,92,4,2,4],
+"group__ADC__Exported__Macros.html#ga650073de508d335d0a1c7bf9b4d07afe":[3,92,3,2,4],
 "group__ADC__Exported__Macros.html#ga8afd5963c41c0a30c5cf1fec5c5710b3":[3,92,3,2,1],
 "group__ADC__Exported__Macros.html#ga8afd5963c41c0a30c5cf1fec5c5710b3":[3,92,4,2,1],
 "group__ADC__Exported__Macros.html#gaadf16862da7593def189559423c287f4":[3,92,3,2,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "group__ADC__Exported__Macros.html#gadcec48b44a2133effd20f41ab227edb9":[3,92,4,2,2],
 "group__ADC__Exported__Macros.html#gadcec48b44a2133effd20f41ab227edb9":[3,92,3,2,2],
 "group__ADC__Exported__Macros.html#gaf29cd943cb451e4ed1f07bd7d4854fb0":[3,92,4,2,6],
-"group__ADC__Exported__Macros.html#gaf29cd943cb451e4ed1f07bd7d4854fb0":[3,92,3,2,6],
-"group__ADC__Exported__Macros.html#gafe44e1e66141bca3665bb82981a81a17":[3,92,4,2,0]
+"group__ADC__Exported__Macros.html#gaf29cd943cb451e4ed1f07bd7d4854fb0":[3,92,3,2,6]
 };

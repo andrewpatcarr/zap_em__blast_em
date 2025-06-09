@@ -1,6 +1,7 @@
 var NAVTREEINDEX274 =
 {
 "group__RCC__Internal__RTC__Clock__Configuration.html#gab7cc36427c31da645a0e38e181f8ce0f":[3,92,16,2,16,9],
+"group__RCC__Internal__RTC__Clock__Configuration.html#gab7cc36427c31da645a0e38e181f8ce0f":[3,92,16,2,16,8],
 "group__RCC__Internal__RTC__Clock__Configuration.html#gad40d00ff1c984ebd011ea9f6e7f93c44":[3,92,16,2,16,5],
 "group__RCC__Internal__RTC__Clock__Configuration.html#gad40d00ff1c984ebd011ea9f6e7f93c44":[3,92,16,2,16,4],
 "group__RCC__Interrupt.html":[3,92,16,1,17],
@@ -40,8 +41,8 @@ var NAVTREEINDEX274 =
 "group__RCC__System__Clock__Source__Status.html#gafb2aec046cc6759c3b290a3eeebe7d75":[3,92,16,1,10,7],
 "group__RCC__System__Clock__Source__Status.html#gafb2aec046cc6759c3b290a3eeebe7d75":[3,92,16,1,10,6],
 "group__RCC__System__Clock__Type.html":[3,92,16,1,8],
-"group__STL__Type.html":[3,2,0,0,0,1,0,0,0,1,0,0,0,0,0],
 "group__STL__Type.html":[3,2,0,0,0,0,0,0,0,1,0,0,0,0,0],
+"group__STL__Type.html":[3,2,0,0,0,1,0,0,0,1,0,0,0,0,0],
 "group__STM32F4xx__HAL__Driver.html":[3,92],
 "group__STM32F4xx__LL__Driver.html":[3,93],
 "group__STM32F4xx__System__Exported__Constants.html":[3,90,0,9],
@@ -63,8 +64,8 @@ var NAVTREEINDEX274 =
 "group__STM32F4xx__System__Private__Functions.html#ga93f514700ccf00d08dbdcff7f1224eb2":[3,90,0,6,1],
 "group__STM32F4xx__System__Private__Functions.html#gae0c36a9591fe6e9c45ecb21a794f0f0f":[3,90,0,6,0],
 "group__STM32F4xx__System__Private__Includes.html":[3,90,0,0],
-"group__STM32F4xx__System__Private__Includes.html#gaaa8c76e274d0f6dd2cefb5d0b17fbc37":[3,90,0,0,2],
 "group__STM32F4xx__System__Private__Includes.html#gaaa8c76e274d0f6dd2cefb5d0b17fbc37":[3,90,0,0,3],
+"group__STM32F4xx__System__Private__Includes.html#gaaa8c76e274d0f6dd2cefb5d0b17fbc37":[3,90,0,0,2],
 "group__STM32F4xx__System__Private__Includes.html#gaeafcff4f57440c60e64812dddd13e7cb":[3,90,0,0,1],
 "group__STM32F4xx__System__Private__Includes.html#gaeafcff4f57440c60e64812dddd13e7cb":[3,90,0,0,0],
 "group__STM32F4xx__System__Private__Macros.html":[3,90,0,3],
@@ -72,8 +73,8 @@ var NAVTREEINDEX274 =
 "group__STM32F4xx__System__Private__Variables.html":[3,90,0,4],
 "group__STM32F4xx__System__Private__Variables.html#ga5b4f8b768465842cf854a8f993b375e9":[3,90,0,4,3],
 "group__STM32F4xx__System__Private__Variables.html#ga5b4f8b768465842cf854a8f993b375e9":[3,90,0,4,2],
-"group__STM32F4xx__System__Private__Variables.html#ga6e1d9cd666f0eacbfde31e9932a93466":[3,90,0,4,1],
 "group__STM32F4xx__System__Private__Variables.html#ga6e1d9cd666f0eacbfde31e9932a93466":[3,90,0,4,0],
+"group__STM32F4xx__System__Private__Variables.html#ga6e1d9cd666f0eacbfde31e9932a93466":[3,90,0,4,1],
 "group__STM32F4xx__System__Private__Variables.html#gaa3cd3e43291e81e795d642b79b6088e6":[3,90,0,4,4],
 "group__STM32F4xx__System__Private__Variables.html#gaa3cd3e43291e81e795d642b79b6088e6":[3,90,0,4,5],
 "group__TIM.html":[3,92,18],
@@ -248,6 +249,5 @@ var NAVTREEINDEX274 =
 "group__TIM__Exported__Macros.html#ga4d69943bc4716743c78e3194e259097e":[3,92,18,2,9],
 "group__TIM__Exported__Macros.html#ga644babf93470a6eee6bce8906c4da5c5":[3,92,18,2,18],
 "group__TIM__Exported__Macros.html#ga69d63e147faeca8909e9679f684c0325":[3,92,18,2,20],
-"group__TIM__Exported__Macros.html#ga6a5e653e0e06a04151b74eb1a5f96eb6":[3,92,18,2,2],
-"group__TIM__Exported__Macros.html#ga8aa84d77c670890408092630f9b2bdc4":[3,92,18,2,27]
+"group__TIM__Exported__Macros.html#ga6a5e653e0e06a04151b74eb1a5f96eb6":[3,92,18,2,2]
 };

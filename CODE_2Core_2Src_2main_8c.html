@@ -113,6 +113,12 @@ $(document).ready(function(){initNavTree('CODE_2Core_2Src_2main_8c.html',''); in
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a0b6a0b24c6bd8af032a6778166201f7e" id="r_a0b6a0b24c6bd8af032a6778166201f7e"><td class="memItemLeft" align="right" valign="top"><a id="a0b6a0b24c6bd8af032a6778166201f7e" name="a0b6a0b24c6bd8af032a6778166201f7e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>calibration</b> (void)</td></tr>
+<tr class="separator:a0b6a0b24c6bd8af032a6778166201f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acde813b84e3a169a4054f15628d87596" id="r_acde813b84e3a169a4054f15628d87596"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CODE_2Core_2Src_2main_8c.html#acde813b84e3a169a4054f15628d87596">wait_for_stall</a> (<a class="el" href="structencoder__t.html">encoder_t</a> *encoder)</td></tr>
+<tr class="memdesc:acde813b84e3a169a4054f15628d87596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits until the encoder motion stalls (no significant ticks change).  <br /></td></tr>
+<tr class="separator:acde813b84e3a169a4054f15628d87596"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70af21c671abfcc773614a9a4f63d920" id="r_a70af21c671abfcc773614a9a4f63d920"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CODE_2Core_2Src_2main_8c.html#a70af21c671abfcc773614a9a4f63d920">SystemClock_Config</a> (void)</td></tr>
 <tr class="memdesc:a70af21c671abfcc773614a9a4f63d920"><td class="mdescLeft">&#160;</td><td class="mdescRight">System Clock Configuration.  <br /></td></tr>
 <tr class="separator:a70af21c671abfcc773614a9a4f63d920"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,9 +128,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga0cd91fd3a9608559c2a87a8ba6cba55f" id="r_ga0cd91fd3a9608559c2a87a8ba6cba55f"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GPIO_EXTI_Callback</b> (uint16_t GPIO_Pin)</td></tr>
 <tr class="separator:ga0cd91fd3a9608559c2a87a8ba6cba55f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b6a0b24c6bd8af032a6778166201f7e" id="r_a0b6a0b24c6bd8af032a6778166201f7e"><td class="memItemLeft" align="right" valign="top"><a id="a0b6a0b24c6bd8af032a6778166201f7e" name="a0b6a0b24c6bd8af032a6778166201f7e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>calibration</b> (void)</td></tr>
-<tr class="separator:a0b6a0b24c6bd8af032a6778166201f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1730ffe1e560465665eb47d9264826f9" id="r_a1730ffe1e560465665eb47d9264826f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CODE_2Core_2Src_2main_8c.html#a1730ffe1e560465665eb47d9264826f9">Error_Handler</a> (void)</td></tr>
 <tr class="memdesc:a1730ffe1e560465665eb47d9264826f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is executed in case of error occurrence.  <br /></td></tr>
 <tr class="separator:a1730ffe1e560465665eb47d9264826f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -290,6 +293,32 @@ const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>hold_time</
 
 </div>
 </div>
+<a id="acde813b84e3a169a4054f15628d87596" name="acde813b84e3a169a4054f15628d87596"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acde813b84e3a169a4054f15628d87596">&#9670;&#160;</a></span>wait_for_stall()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wait_for_stall </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structencoder__t.html">encoder_t</a> *&#160;</td>
+          <td class="paramname"><em>p_enc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Waits until the encoder motion stalls (no significant ticks change). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_enc</td><td>Pointer to <a class="el" href="structencoder__t.html">encoder_t</a> instance </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="a696e7b844d784503479c1f8294aee359" name="a696e7b844d784503479c1f8294aee359"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a696e7b844d784503479c1f8294aee359">&#9670;&#160;</a></span>adc_task</h2>
@@ -327,30 +356,27 @@ const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>hold_time</
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {.color = 1, </div>
+<b>Initial value:</b><div class="fragment"><div class="line">= {.dir = -1, </div>
 <div class="line">                                       .state = 0,</div>
-<div class="line">                                       .num_states = 3,</div>
+<div class="line">                                       .num_states = 2,</div>
 <div class="line">                                       .chan1 = <a class="code hl_define" href="group__TIM__Channel.html#ga4ea100c1789b178f3cb46721b7257e2d">TIM_CHANNEL_3</a>,</div>
 <div class="line">                                       .chan2 = <a class="code hl_define" href="group__TIM__Channel.html#gad59ef74820ee8bf77fa1f8d589fde2ac">TIM_CHANNEL_4</a>,</div>
 <div class="line">                                       .pot_zero = 0,</div>
-<div class="line">                                       .control_signal = 0.0,</div>
+<div class="line">                                       .des_pos = 0,</div>
 <div class="line">                                       .prev_time = 0,</div>
 <div class="line">                                       .current_time = 0,</div>
 <div class="line">                                       .prev_ticks = 0,</div>
 <div class="line">                                       .k_p = 1,</div>
-<div class="line">                                       .k_d = 0,</div>
-<div class="line">                                       .cw_deadzone = 150,      </div>
-<div class="line">                                       .ccw_deadzone = 150,     </div>
+<div class="line">                                       .k_i = 0,</div>
 <div class="line">                                       .adc_val = 0,</div>
-<div class="line">                                       .encoder_range = 1289,</div>
+<div class="line">                                       .integral_error = 0,</div>
 <div class="line">                                       .htim_encoder = &amp;htim3,      </div>
 <div class="line">                                       .htim_dt = &amp;htim2,</div>
 <div class="line">                                       .hadc = &amp;hadc1,              </div>
 <div class="line">                                       .motor = &amp;mblue,</div>
 <div class="line">                                       .encoder = &amp;blue_encoder,</div>
 <div class="line">                                       .state_list = {&amp;controller_task_state_0_init,</div>
-<div class="line">                                                      &amp;controller_task_state_1_calc_vel,</div>
-<div class="line">                                                      &amp;controller_task_state_2_pos}</div>
+<div class="line">                                                      &amp;controller_task_state_1_pos}</div>
 <div class="line">}</div>
 <div class="ttc" id="agroup__TIM__Channel_html_ga4ea100c1789b178f3cb46721b7257e2d"><div class="ttname"><a href="group__TIM__Channel.html#ga4ea100c1789b178f3cb46721b7257e2d">TIM_CHANNEL_3</a></div><div class="ttdeci">#define TIM_CHANNEL_3</div><div class="ttdef"><b>Definition</b> stm32f4xx_hal_tim.h:740</div></div>
 <div class="ttc" id="agroup__TIM__Channel_html_gad59ef74820ee8bf77fa1f8d589fde2ac"><div class="ttname"><a href="group__TIM__Channel.html#gad59ef74820ee8bf77fa1f8d589fde2ac">TIM_CHANNEL_4</a></div><div class="ttdeci">#define TIM_CHANNEL_4</div><div class="ttdef"><b>Definition</b> stm32f4xx_hal_tim.h:741</div></div>
@@ -372,7 +398,7 @@ const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>hold_time</
 <div class="line">                          .ar = 0xFFFF,</div>
 <div class="line">                          .ticks = 0,</div>
 <div class="line">                          .last_ticks = 0,</div>
-<div class="line">                          .range = 1282,</div>
+<div class="line">                          .range = 1300,</div>
 <div class="line">                          .htim = &amp;htim3</div>
 <div class="line">}</div>
 </div><!-- fragment -->
@@ -452,7 +478,7 @@ const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>hold_time</
 <div class="line">                      .num = 0,</div>
 <div class="line">                      .delay_start = 0,</div>
 <div class="line">                      .delay_flag = 0,</div>
-<div class="line">                      .delay = 1000000,     </div>
+<div class="line">                      .delay = 2000000,     </div>
 <div class="line">                      .end_delay = 1000000, </div>
 <div class="line">                      .htim = &amp;htim2,</div>
 <div class="line">                      .sound_task_ptr = &amp;sound_task,</div>
@@ -518,30 +544,27 @@ const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>hold_time</
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {.color = 0, </div>
+<b>Initial value:</b><div class="fragment"><div class="line">= {.dir = 1, </div>
 <div class="line">                                      .state = 0,</div>
-<div class="line">                                      .num_states = 3,</div>
+<div class="line">                                      .num_states = 2,</div>
 <div class="line">                                      .chan1 = <a class="code hl_define" href="group__TIM__Channel.html#ga6b1541e4a49d62610899e24bf23f4879">TIM_CHANNEL_1</a>,</div>
 <div class="line">                                      .chan2 = <a class="code hl_define" href="group__TIM__Channel.html#ga33e02d43345a7ac5886f01b39e4f7ccd">TIM_CHANNEL_2</a>,</div>
 <div class="line">                                      .pot_zero = 0,</div>
-<div class="line">                                      .control_signal = 0.0,</div>
+<div class="line">                                      .des_pos = 0,</div>
 <div class="line">                                      .prev_time = 0,</div>
 <div class="line">                                      .current_time = 0,</div>
 <div class="line">                                      .prev_ticks = 0,</div>
-<div class="line">                                      .k_p = 1,</div>
-<div class="line">                                      .k_d = 0.0,</div>
-<div class="line">                                      .cw_deadzone = 400,           </div>
-<div class="line">                                      .ccw_deadzone = 300,      </div>
+<div class="line">                                      .k_p = -1,</div>
+<div class="line">                                      .k_i = 0,</div>
 <div class="line">                                      .adc_val = 0,</div>
-<div class="line">                                      .encoder_range = 1278,</div>
+<div class="line">                                      .integral_error = 0,</div>
 <div class="line">                                      .htim_encoder = &amp;htim5,</div>
 <div class="line">                                      .htim_dt = &amp;htim2,</div>
 <div class="line">                                      .hadc = &amp;hadc1,</div>
 <div class="line">                                      .motor = &amp;mred,</div>
 <div class="line">                                      .encoder = &amp;red_encoder,</div>
 <div class="line">                                      .state_list = {&amp;controller_task_state_0_init,</div>
-<div class="line">                                                     &amp;controller_task_state_1_calc_vel,</div>
-<div class="line">                                                     &amp;controller_task_state_2_pos}</div>
+<div class="line">                                                     &amp;controller_task_state_1_pos}</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
@@ -561,7 +584,7 @@ const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>hold_time</
 <div class="line">                         .ar = 0xFFFFFFFF,</div>
 <div class="line">                         .ticks = 0,</div>
 <div class="line">                         .last_ticks = 0,</div>
-<div class="line">                         .range = 1275,</div>
+<div class="line">                         .range = 1300,</div>
 <div class="line">                         .htim = &amp;htim5</div>
 <div class="line"> </div>
 <div class="line">}</div>

@@ -23,6 +23,7 @@ var NAVTREEINDEX0 =
 "CODE_2Core_2Src_2main_8c.html#a1730ffe1e560465665eb47d9264826f9":[5,0,0,0,1,0,0],
 "CODE_2Core_2Src_2main_8c.html#a70af21c671abfcc773614a9a4f63d920":[5,0,0,0,1,0,2],
 "CODE_2Core_2Src_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe":[5,0,0,0,1,0,1],
+"CODE_2Core_2Src_2main_8c.html#acde813b84e3a169a4054f15628d87596":[5,0,0,0,1,0,3],
 "CODE_2Core_2Src_2stm32f4xx__hal__msp_8c.html":[5,0,0,0,1,1],
 "CODE_2Core_2Src_2stm32f4xx__hal__msp_8c.html#ae4fb8e66865c87d0ebab74a726a6891f":[5,0,0,0,1,1,4],
 "CODE_2Core_2Src_2stm32f4xx__hal__msp_8c.html#ae70bce6c39d0b570a7523b86738cec4b":[5,0,0,0,1,1,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "CODE_2Drivers_2STM32F4xx__HAL__Driver_2Inc_2stm32f4xx__hal__def_8h.html#a63c0679d1cb8b8c684fbb0632743478fa8532fa3641ae7c14cb1b0554e2d9cbc7":[5,0,0,1,1,0,5,2,2],
 "CODE_2Drivers_2STM32F4xx__HAL__Driver_2Inc_2stm32f4xx__hal__def_8h.html#ab367482e943333a1299294eadaad284b":[5,0,0,1,1,0,5,1],
 "CODE_2Drivers_2STM32F4xx__HAL__Driver_2Inc_2stm32f4xx__hal__def_8h.html#ab367482e943333a1299294eadaad284ba656ad5f6dad97210cf3ccf107c033e4d":[5,0,0,1,1,0,5,1,1],
-"CODE_2Drivers_2STM32F4xx__HAL__Driver_2Inc_2stm32f4xx__hal__def_8h.html#ab367482e943333a1299294eadaad284ba9bd487430440139444e6e7ff226005c0":[5,0,0,1,1,0,5,1,0],
-"CODE_2Drivers_2STM32F4xx__HAL__Driver_2Inc_2stm32f4xx__hal__def_8h_source.html":[5,0,0,1,1,0,5]
+"CODE_2Drivers_2STM32F4xx__HAL__Driver_2Inc_2stm32f4xx__hal__def_8h.html#ab367482e943333a1299294eadaad284ba9bd487430440139444e6e7ff226005c0":[5,0,0,1,1,0,5,1,0]
 };
