@@ -136,28 +136,32 @@ $(document).ready(function(){initNavTree('game__task_8h_source.html',''); initRe
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    int32_t             delay_flag;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    uint32_t            delay;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    uint32_t            end_delay;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_struct" href="structTIM__HandleTypeDef.html">TIM_HandleTypeDef</a>   *htim;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_struct" href="structSoundTask.html">SoundTask</a>           *sound_task_ptr;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_struct" href="structPhotoresistorTask.html">PhotoresistorTask</a>   *red_photoresistor_task_ptr;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_struct" href="structPhotoresistorTask.html">PhotoresistorTask</a>   *blue_photoresistor_task_ptr;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_struct" href="structI2C__HandleTypeDef.html">I2C_HandleTypeDef</a>   *i2c_handle;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    game_fcn_t          state_list[];</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>};</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_struct" href="structTIM__HandleTypeDef.html">TIM_HandleTypeDef</a>   *htim;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_struct" href="structSoundTask.html">SoundTask</a>           *sound_task_ptr;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_struct" href="structPhotoresistorTask.html">PhotoresistorTask</a>   *red_photoresistor_task_ptr;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_struct" href="structPhotoresistorTask.html">PhotoresistorTask</a>   *blue_photoresistor_task_ptr;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_struct" href="structmotor__t.html">motor_t</a>             *mred;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_struct" href="structmotor__t.html">motor_t</a>             *mblue;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_struct" href="structI2C__HandleTypeDef.html">I2C_HandleTypeDef</a>   *i2c_handle;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    game_fcn_t          state_list[];</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>};</div>
 </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">// A prototype for each function implemented in task_1.c</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keywordtype">void</span> game_task_state_0_init(<a class="code hl_struct" href="structGameTask.html">GameTask</a> *game_task);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keywordtype">void</span> game_task_run(<a class="code hl_struct" href="structGameTask.html">GameTask</a> *game_task);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keywordtype">void</span> game_task_state_1_home(<a class="code hl_struct" href="structGameTask.html">GameTask</a> *game_task);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keywordtype">void</span> game_task_state_2_play(<a class="code hl_struct" href="structGameTask.html">GameTask</a> *game_task);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keywordtype">void</span> game_task_state_3_end(<a class="code hl_struct" href="structGameTask.html">GameTask</a> *game_task);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#endif </span><span class="comment">/* INC_GAME_TASK_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">// A prototype for each function implemented in task_1.c</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keywordtype">void</span> game_task_state_0_init(<a class="code hl_struct" href="structGameTask.html">GameTask</a> *game_task);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keywordtype">void</span> game_task_run(<a class="code hl_struct" href="structGameTask.html">GameTask</a> *game_task);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keywordtype">void</span> game_task_state_1_home(<a class="code hl_struct" href="structGameTask.html">GameTask</a> *game_task);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keywordtype">void</span> game_task_state_2_play(<a class="code hl_struct" href="structGameTask.html">GameTask</a> *game_task);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keywordtype">void</span> game_task_state_3_end(<a class="code hl_struct" href="structGameTask.html">GameTask</a> *game_task);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#endif </span><span class="comment">/* INC_GAME_TASK_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="astructGameTask_html"><div class="ttname"><a href="structGameTask.html">GameTask</a></div><div class="ttdef"><b>Definition</b> game_task.h:24</div></div>
 <div class="ttc" id="astructI2C__HandleTypeDef_html"><div class="ttname"><a href="structI2C__HandleTypeDef.html">I2C_HandleTypeDef</a></div><div class="ttdef"><b>Definition</b> stm32f4xx_hal_i2c.h:189</div></div>
 <div class="ttc" id="astructPhotoresistorTask_html"><div class="ttname"><a href="structPhotoresistorTask.html">PhotoresistorTask</a></div><div class="ttdef"><b>Definition</b> photoresistor_task.h:22</div></div>
 <div class="ttc" id="astructSoundTask_html"><div class="ttname"><a href="structSoundTask.html">SoundTask</a></div><div class="ttdef"><b>Definition</b> sound_task.h:21</div></div>
 <div class="ttc" id="astructTIM__HandleTypeDef_html"><div class="ttname"><a href="structTIM__HandleTypeDef.html">TIM_HandleTypeDef</a></div><div class="ttdoc">TIM Time Base Handle Structure definition.</div><div class="ttdef"><b>Definition</b> stm32f4xx_hal_tim.h:339</div></div>
+<div class="ttc" id="astructmotor__t_html"><div class="ttname"><a href="structmotor__t.html">motor_t</a></div><div class="ttdef"><b>Definition</b> motor_driver.h:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

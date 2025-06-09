@@ -816,7 +816,7 @@ var searchData=
   ['trace_20macrocell_20itm_813',['Instrumentation Trace Macrocell (ITM)',['../group__CMSIS__ITM.html',1,'']]],
   ['trace_20port_20interface_20tpi_814',['Trace Port Interface (TPI)',['../group__CMSIS__TPI.html',1,'']]],
   ['transfer_20direction_815',['DMA Data transfer direction',['../group__DMA__Data__transfer__direction.html',1,'']]],
-  ['trigger_816',['trigger',['../group__EXTI__Trigger.html',1,'EXTI Trigger'],['../structEXTI__ConfigTypeDef.html#a73dd50a4d440463bf9e1cb02b72ac706',1,'EXTI_ConfigTypeDef::Trigger'],['../group__CMSIS__Core__SysTickFunctions.html#ga5590387d8f44b477fd69951a737b0d7e',1,'TPI_Type::TRIGGER']]],
+  ['trigger_816',['trigger',['../group__EXTI__Trigger.html',1,'EXTI Trigger'],['../group__CMSIS__Core__SysTickFunctions.html#ga5590387d8f44b477fd69951a737b0d7e',1,'TPI_Type::TRIGGER'],['../structEXTI__ConfigTypeDef.html#a73dd50a4d440463bf9e1cb02b72ac706',1,'EXTI_ConfigTypeDef::Trigger']]],
   ['trigger_20edge_20injected_817',['ADC External Trigger Edge Injected',['../group__ADCEx__External__trigger__edge__Injected.html',1,'']]],
   ['trigger_20edge_20regular_818',['ADC External Trigger Edge Regular',['../group__ADC__External__trigger__edge__Regular.html',1,'']]],
   ['trigger_20polarity_819',['TIM Trigger Polarity',['../group__TIM__Trigger__Polarity.html',1,'']]],

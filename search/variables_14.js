@@ -8,7 +8,7 @@ var searchData=
   ['ter_5',['TER',['../group__CMSIS__core__DebugFunctions.html#gaa6530efad3a727fb3cc8f509403b9948',1,'ITM_Type']]],
   ['tpr_6',['TPR',['../group__CMSIS__core__DebugFunctions.html#gafe5e266862734ca1082ceddff7180688',1,'ITM_Type']]],
   ['tr_7',['TR',['../structRTC__TypeDef.html#a63d179b7a36a715dce7203858d3be132',1,'RTC_TypeDef']]],
-  ['trigger_8',['trigger',['../group__CMSIS__Core__SysTickFunctions.html#ga5590387d8f44b477fd69951a737b0d7e',1,'TPI_Type::TRIGGER'],['../structEXTI__ConfigTypeDef.html#a73dd50a4d440463bf9e1cb02b72ac706',1,'EXTI_ConfigTypeDef::Trigger']]],
+  ['trigger_8',['trigger',['../structEXTI__ConfigTypeDef.html#a73dd50a4d440463bf9e1cb02b72ac706',1,'EXTI_ConfigTypeDef::Trigger'],['../group__CMSIS__Core__SysTickFunctions.html#ga5590387d8f44b477fd69951a737b0d7e',1,'TPI_Type::TRIGGER']]],
   ['triggerfilter_9',['TriggerFilter',['../structTIM__SlaveConfigTypeDef.html#aef9e224ccafea4bfdd64193ea84feaf3',1,'TIM_SlaveConfigTypeDef']]],
   ['triggerpolarity_10',['TriggerPolarity',['../structTIM__SlaveConfigTypeDef.html#afd12184c6e590581c775504a2e6c048c',1,'TIM_SlaveConfigTypeDef']]],
   ['triggerprescaler_11',['TriggerPrescaler',['../structTIM__SlaveConfigTypeDef.html#aa2906798e3808ed40ac203a741512b55',1,'TIM_SlaveConfigTypeDef']]],
