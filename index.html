@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Zap&#39;Em Blast&#39;Em Robots: Main Page</title>
+<title>Zap&#39;Em Blast&#39;Em Robots: Zap&#39;Em Blast&#39;Em Robots</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -89,10 +89,70 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">Zap'Em Blast'Em Robots Documentation</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">Zap'Em Blast'Em Robots </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><h1><a class="anchor" id="intro_sec"></a>
+Introduction</h1>
+<p><b>Zap'Em Blast'Em Robots</b> is an embedded game system built for the STM32 platform that blends the physical action of <b>Rock'em Sock'em Robots</b> with the strategic targeting of <b>laser tag</b>. Each robot is equipped with photodetectors and controllers, enabling reactive combat-style gameplay using infrared "lasers" and sensor feedback. The robots zap, blast, and try to out-tag each other in real time!</p>
+<h1><a class="anchor" id="gameplay_sec"></a>
+Game Premise</h1>
+<p>Two robotic opponents square off in a head-to-head battle arena. Instead of punching, each robot is armed with IR transmitters ("lasers") and photodetectors. The objective is to:</p><ul>
+<li>Target and "zap" the opponent with precision.</li>
+<li>Avoid getting tagged by the opponent’s laser.</li>
+<li>Use sensor feedback to make reactive decisions during battle.</li>
+</ul>
+<h1><a class="anchor" id="features_sec"></a>
+Features</h1>
+<ul>
+<li>Real-time ADC monitoring via DMA for responsive sensor reads</li>
+<li>Modular task system for sensors, controllers, and game logic</li>
+<li>State-based behavior engine per robot</li>
+<li>Expandable architecture for multi-robot battles or AI logic</li>
+<li>Clean documentation powered by Doxygen</li>
+</ul>
+<h1><a class="anchor" id="files_sec"></a>
+File Overview</h1>
+<ul>
+<li><code>adc_task.c/h</code>: Reads and distributes analog signals from photoresistors</li>
+<li><code>controller_task.c/h</code>: Processes control decisions for offensive and defensive moves</li>
+<li><code>photoresistor_task.c/h</code>: Interfaces with analog light-detecting hardware</li>
+<li><code>main.c</code>: Initializes the game environment and task scheduler</li>
+</ul>
+<h1><a class="anchor" id="tech_sec"></a>
+Technology Stack</h1>
+<ul>
+<li><b>MCU</b>: STM32F4 series</li>
+<li><b>IDE</b>: STM32CubeIDE (Eclipse-based)</li>
+<li><b>Communication</b>: DMA-driven ADC + IR sensing</li>
+<li><b>Documentation</b>: Doxygen</li>
+</ul>
+<h1><a class="anchor" id="usage_sec"></a>
+How to Use</h1>
+<ol type="1">
+<li>Connect each robot to its power source and flash the firmware.</li>
+<li>Ensure photoresistors and IR emitters are aligned and calibrated.</li>
+<li>Start the game via the main controller or user switch.</li>
+<li>Watch the robots battle it out — and try not to blink!</li>
+</ol>
+<h1><a class="anchor" id="license_sec"></a>
+License</h1>
+<p>MIT License — see <code>LICENSE</code> file for details.</p>
+<h1><a class="anchor" id="authors_sec"></a>
+Authors</h1>
+<ul>
+<li>Kai De La Cruz</li>
+<li>Andrew Carr</li>
+</ul>
+<h1><a class="anchor" id="future_sec"></a>
+Future Ideas</h1>
+<ul>
+<li>Add wireless scoring module</li>
+<li>Support AI-controlled bots</li>
+<li>Design a scoring HUD via UART/serial output </li>
+</ul>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

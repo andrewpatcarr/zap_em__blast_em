@@ -961,11 +961,12 @@ var searchData=
   ['usb_5fotg_5ftx0fd_5fmsk_958',['usb_otg_tx0fd_msk',['../group__Peripheral__Registers__Bits__Definition.html#gae9db88da5ed817b0e836a7fe631b8a3c',1,'USB_OTG_TX0FD_Msk:&#160;stm32f411xe.h'],['../group__Peripheral__Registers__Bits__Definition.html#gae9db88da5ed817b0e836a7fe631b8a3c',1,'USB_OTG_TX0FD_Msk:&#160;stm32f411xe.h']]],
   ['usb_5fotg_5ftx0fsa_959',['usb_otg_tx0fsa',['../group__Peripheral__Registers__Bits__Definition.html#ga878564768aedb86dd987f933edd56ded',1,'USB_OTG_TX0FSA:&#160;stm32f411xe.h'],['../group__Peripheral__Registers__Bits__Definition.html#ga878564768aedb86dd987f933edd56ded',1,'USB_OTG_TX0FSA:&#160;stm32f411xe.h']]],
   ['usb_5fotg_5ftx0fsa_5fmsk_960',['usb_otg_tx0fsa_msk',['../group__Peripheral__Registers__Bits__Definition.html#ga1135e855d8d6bd816ab72978a82217d5',1,'USB_OTG_TX0FSA_Msk:&#160;stm32f411xe.h'],['../group__Peripheral__Registers__Bits__Definition.html#ga1135e855d8d6bd816ab72978a82217d5',1,'USB_OTG_TX0FSA_Msk:&#160;stm32f411xe.h']]],
-  ['userconfig_961',['USERConfig',['../structFLASH__OBProgramInitTypeDef.html#ac4ab84c90f7a878b0b39ec1f3dda8ded',1,'FLASH_OBProgramInitTypeDef']]],
-  ['utils_962',['UTILS',['../group__UTILS__LL.html',1,'']]],
-  ['utils_20exported_20constants_963',['UTILS Exported Constants',['../group__UTILS__LL__Exported__Constants.html',1,'']]],
-  ['utils_20exported_20functions_964',['UTILS Exported Functions',['../group__UTILS__LL__Exported__Functions.html',1,'']]],
-  ['utils_20exported_20structures_965',['UTILS Exported structures',['../group__UTILS__LL__ES__INIT.html',1,'']]],
-  ['utils_20private_20constants_966',['UTILS Private Constants',['../group__UTILS__LL__Private__Constants.html',1,'']]],
-  ['utils_20private_20macros_967',['UTILS Private Macros',['../group__UTILS__LL__Private__Macros.html',1,'']]]
+  ['use_961',['How to Use',['../index.html#usage_sec',1,'']]],
+  ['userconfig_962',['USERConfig',['../structFLASH__OBProgramInitTypeDef.html#ac4ab84c90f7a878b0b39ec1f3dda8ded',1,'FLASH_OBProgramInitTypeDef']]],
+  ['utils_963',['UTILS',['../group__UTILS__LL.html',1,'']]],
+  ['utils_20exported_20constants_964',['UTILS Exported Constants',['../group__UTILS__LL__Exported__Constants.html',1,'']]],
+  ['utils_20exported_20functions_965',['UTILS Exported Functions',['../group__UTILS__LL__Exported__Functions.html',1,'']]],
+  ['utils_20exported_20structures_966',['UTILS Exported structures',['../group__UTILS__LL__ES__INIT.html',1,'']]],
+  ['utils_20private_20constants_967',['UTILS Private Constants',['../group__UTILS__LL__Private__Constants.html',1,'']]],
+  ['utils_20private_20macros_968',['UTILS Private Macros',['../group__UTILS__LL__Private__Macros.html',1,'']]]
 ];

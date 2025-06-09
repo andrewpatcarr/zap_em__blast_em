@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['exceptions_0',['MISRA-C:2004 Compliance Exceptions',['../CMSIS_MISRA_Exceptions.html',1,'']]]
+  ['deprecated_20list_0',['Deprecated List',['../deprecated.html',1,'']]]
 ];

@@ -25,6 +25,15 @@
 var NAVTREE =
 [
   [ "Zap'Em Blast'Em Robots", "index.html", [
+    [ "Introduction", "index.html#intro_sec", null ],
+    [ "Game Premise", "index.html#gameplay_sec", null ],
+    [ "Features", "index.html#features_sec", null ],
+    [ "File Overview", "index.html#files_sec", null ],
+    [ "Technology Stack", "index.html#tech_sec", null ],
+    [ "How to Use", "index.html#usage_sec", null ],
+    [ "License", "index.html#license_sec", null ],
+    [ "Authors", "index.html#authors_sec", null ],
+    [ "Future Ideas", "index.html#future_sec", null ],
     [ "MISRA-C:2004 Compliance Exceptions", "CMSIS_MISRA_Exceptions.html", null ],
     [ "zap_em__shoot_em", "md_README.html", null ],
     [ "Deprecated List", "deprecated.html", null ],
@@ -330,10 +339,10 @@ var NAVTREEINDEX =
 "group__Peripheral__interrupt__number__definition.html#gga7e1129cd8a196f4284d41db3e82ad5c8a16fe70a39348f3f27906dc268b5654e3",
 "group__RCC__Internal__RTC__Clock__Configuration.html#gab7cc36427c31da645a0e38e181f8ce0f",
 "group__TIM__Exported__Macros.html#ga8aa84d77c670890408092630f9b2bdc4",
-"structADC__AnalogWDGConfTypeDef.html#a5c3a76d9a8ac84c537e7df10b0315e5a",
-"structPhotoresistorTask.html",
-"structTIM__TypeDef.html#afdfa307571967afb1d97943e982b6586",
-"test__blank_2Drivers_2CMSIS_2Include_2core__cm35p_8h.html#a623e4cbbcab2fcae8f87d152c15fb18d"
+"stm32f4xx__ll__i2c_8h.html",
+"structMemSysCtl__Type.html",
+"structTIM__TypeDef.html#aa1b1b7107fcf35abe39d20f5dfc230ee",
+"test__blank_2Drivers_2CMSIS_2Include_2core__cm33_8h.html#a7e25d9380f9ef903923964322e71f2f6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
