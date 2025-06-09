@@ -19,8 +19,9 @@ var searchData=
   ['mmfr_16',['MMFR',['../group__CMSIS__core__DebugFunctions.html#ga2d4cde1c9462f3733ab65d97f308c6fb',1,'SCB_Type']]],
   ['mode_17',['mode',['../structADC__MultiModeTypeDef.html#a0ffc93ec511ed9cf1663f6939bd3e839',1,'ADC_MultiModeTypeDef::Mode'],['../structDMA__InitTypeDef.html#a0ffc93ec511ed9cf1663f6939bd3e839',1,'DMA_InitTypeDef::Mode'],['../structEXTI__ConfigTypeDef.html#a0ffc93ec511ed9cf1663f6939bd3e839',1,'EXTI_ConfigTypeDef::Mode'],['../structGPIO__InitTypeDef.html#a0ffc93ec511ed9cf1663f6939bd3e839',1,'GPIO_InitTypeDef::Mode'],['../structI2C__HandleTypeDef.html#ac25cb640453370e3b2526799dc24eb5a',1,'I2C_HandleTypeDef::Mode'],['../structPWR__PVDTypeDef.html#a0ffc93ec511ed9cf1663f6939bd3e839',1,'PWR_PVDTypeDef::Mode']]],
   ['moder_18',['MODER',['../structGPIO__TypeDef.html#a2b671a94c63a612f81e0e9de8152d01c',1,'GPIO_TypeDef']]],
-  ['mscr_19',['MSCR',['../group__CMSIS__core__DebugFunctions.html#gaf7ab00e25170faced6023d7f387319c5',1,'MemSysCtl_Type']]],
-  ['mvfr0_20',['mvfr0',['../group__CMSIS__core__DebugFunctions.html#ga9b0103b438c8922eaea5624f71afbbc8',1,'SCB_Type::MVFR0'],['../group__CMSIS__core__DebugFunctions.html#ga9b0103b438c8922eaea5624f71afbbc8',1,'FPU_Type::MVFR0']]],
-  ['mvfr1_21',['mvfr1',['../group__CMSIS__core__DebugFunctions.html#ga0a610dc4212de3ce1ad62e9afa76c728',1,'SCB_Type::MVFR1'],['../group__CMSIS__core__DebugFunctions.html#ga0a610dc4212de3ce1ad62e9afa76c728',1,'FPU_Type::MVFR1']]],
-  ['mvfr2_22',['mvfr2',['../group__CMSIS__core__DebugFunctions.html#ga8353348c9336aa1aadcbf86b6f0f18c9',1,'SCB_Type::MVFR2'],['../group__CMSIS__core__DebugFunctions.html#ga8353348c9336aa1aadcbf86b6f0f18c9',1,'FPU_Type::MVFR2']]]
+  ['motor_19',['motor',['../structControllerTask.html#ac602ff443a11be7be2fda818f4912ad8',1,'ControllerTask']]],
+  ['mscr_20',['MSCR',['../group__CMSIS__core__DebugFunctions.html#gaf7ab00e25170faced6023d7f387319c5',1,'MemSysCtl_Type']]],
+  ['mvfr0_21',['mvfr0',['../group__CMSIS__core__DebugFunctions.html#ga9b0103b438c8922eaea5624f71afbbc8',1,'SCB_Type::MVFR0'],['../group__CMSIS__core__DebugFunctions.html#ga9b0103b438c8922eaea5624f71afbbc8',1,'FPU_Type::MVFR0']]],
+  ['mvfr1_22',['mvfr1',['../group__CMSIS__core__DebugFunctions.html#ga0a610dc4212de3ce1ad62e9afa76c728',1,'SCB_Type::MVFR1'],['../group__CMSIS__core__DebugFunctions.html#ga0a610dc4212de3ce1ad62e9afa76c728',1,'FPU_Type::MVFR1']]],
+  ['mvfr2_23',['mvfr2',['../group__CMSIS__core__DebugFunctions.html#ga8353348c9336aa1aadcbf86b6f0f18c9',1,'SCB_Type::MVFR2'],['../group__CMSIS__core__DebugFunctions.html#ga8353348c9336aa1aadcbf86b6f0f18c9',1,'FPU_Type::MVFR2']]]
 ];

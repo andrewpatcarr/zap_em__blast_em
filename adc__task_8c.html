@@ -96,12 +96,12 @@ $(document).ready(function(){initNavTree('adc__task_8c.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 
-<p>Handles ADC and DMA processing for sensor input.  
+<p>ADC task driver for managing DMA-based ADC value acquisition and assignment.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;adc_task.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="adc__task_8h_source.html">adc_task.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="stm32f4xx__hal__tim_8h_source.html">stm32f4xx_hal_tim.h</a>&quot;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
-<code>#include &quot;controller_task.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="controller__task_8h_source.html">controller_task.h</a>&quot;</code><br />
 <code>#include &quot;photoresistor_task.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -117,7 +117,9 @@ Functions</h2></td></tr>
 <tr class="separator:a9535953d4539b4d8ce345c521fa43e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Handles ADC and DMA processing for sensor input. </p>
+<div class="textblock"><p>ADC task driver for managing DMA-based ADC value acquisition and assignment. </p>
+<dl class="section author"><dt>Author</dt><dd>Andrew Carr</dd></dl>
+<p>Created on: Jun 5, 2025 </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a48d792d695802b538e359ad38a9729a4" name="a48d792d695802b538e359ad38a9729a4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a48d792d695802b538e359ad38a9729a4">&#9670;&#160;</a></span>adc_task_run()</h2>
@@ -136,10 +138,11 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Executes the current state of the ADC task. </p>
+<p>Executes the current ADC task state.</p>
 <p>This function checks the validity of the current state, then calls the corresponding state handler from the state's function pointer list.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">adc_task</td><td>Pointer to the <a class="el" href="structADCTask.html">ADCTask</a> structure containing state and hardware info. </td></tr>
+    <tr><td class="paramname">adc_task</td><td>Pointer to the <a class="el" href="structADCTask.html" title="Structure that represents the ADC task state and configuration.">ADCTask</a> structure containing state and hardware info. </td></tr>
   </table>
   </dd>
 </dl>
@@ -163,10 +166,11 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes the ADC task. </p>
+<p>Initializes the ADC task (state 0).</p>
 <p>Sets the task's state to 1 and starts the ADC with DMA to fill the dma_buffer.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">adc_task</td><td>Pointer to the <a class="el" href="structADCTask.html">ADCTask</a> structure. </td></tr>
+    <tr><td class="paramname">adc_task</td><td>Pointer to the <a class="el" href="structADCTask.html" title="Structure that represents the ADC task state and configuration.">ADCTask</a> structure. </td></tr>
   </table>
   </dd>
 </dl>
@@ -190,10 +194,11 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reads ADC values from DMA buffer and assigns them to respective photo resistors and controllers. </p>
+<p>Reads and assigns values from the ADC DMA buffer (state 1).</p>
 <p>This function maps each DMA buffer value to its corresponding sensor's <code>adc_val</code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">adc_task</td><td>Pointer to the <a class="el" href="structADCTask.html">ADCTask</a> structure. </td></tr>
+    <tr><td class="paramname">adc_task</td><td>Pointer to the <a class="el" href="structADCTask.html" title="Structure that represents the ADC task state and configuration.">ADCTask</a> structure. </td></tr>
   </table>
   </dd>
 </dl>

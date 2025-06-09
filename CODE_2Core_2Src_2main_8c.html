@@ -100,14 +100,14 @@ $(document).ready(function(){initNavTree('CODE_2Core_2Src_2main_8c.html',''); in
 <p>: Main program body  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;main.h&quot;</code><br />
-<code>#include &quot;controller_task.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="controller__task_8h_source.html">controller_task.h</a>&quot;</code><br />
 <code>#include &quot;motor_driver.h&quot;</code><br />
 <code>#include &quot;game_task.h&quot;</code><br />
 <code>#include &quot;sound_task.h&quot;</code><br />
 <code>#include &quot;shoot_task.h&quot;</code><br />
 <code>#include &quot;lcd.h&quot;</code><br />
 <code>#include &quot;photoresistor_task.h&quot;</code><br />
-<code>#include &quot;adc_task.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="adc__task_8h_source.html">adc_task.h</a>&quot;</code><br />
 <code>#include &quot;encoder_driver.h&quot;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 </div><table class="memberdecls">
@@ -338,10 +338,12 @@ const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>hold_time</
 <div class="line">                    .red_photor_ptr = &amp;red_photoresistor_task,</div>
 <div class="line">                    .blue_photor_ptr = &amp;blue_photoresistor_task,</div>
 <div class="line">                    .hadc = &amp;hadc1,</div>
-<div class="line">                    .state_list = {&amp;adc_task_state_0_init,</div>
-<div class="line">                                   &amp;adc_task_state_1_read}</div>
+<div class="line">                    .state_list = {&amp;<a class="code hl_function" href="adc__task_8h.html#a804ed2efd3bfecfa4e7dffe7fbf1249d">adc_task_state_0_init</a>,</div>
+<div class="line">                                   &amp;<a class="code hl_function" href="adc__task_8h.html#a9535953d4539b4d8ce345c521fa43e2f">adc_task_state_1_read</a>}</div>
 <div class="line"> </div>
 <div class="line">}</div>
+<div class="ttc" id="aadc__task_8h_html_a804ed2efd3bfecfa4e7dffe7fbf1249d"><div class="ttname"><a href="adc__task_8h.html#a804ed2efd3bfecfa4e7dffe7fbf1249d">adc_task_state_0_init</a></div><div class="ttdeci">void adc_task_state_0_init(ADCTask *adc_task)</div><div class="ttdoc">Initializes the ADC task (state 0).</div><div class="ttdef"><b>Definition</b> adc_task.c:58</div></div>
+<div class="ttc" id="aadc__task_8h_html_a9535953d4539b4d8ce345c521fa43e2f"><div class="ttname"><a href="adc__task_8h.html#a9535953d4539b4d8ce345c521fa43e2f">adc_task_state_1_read</a></div><div class="ttdeci">void adc_task_state_1_read(ADCTask *adc_task)</div><div class="ttdoc">Reads and assigns values from the ADC DMA buffer (state 1).</div><div class="ttdef"><b>Definition</b> adc_task.c:75</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -375,9 +377,11 @@ const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>hold_time</
 <div class="line">                                       .hadc = &amp;hadc1,              </div>
 <div class="line">                                       .motor = &amp;mblue,</div>
 <div class="line">                                       .encoder = &amp;blue_encoder,</div>
-<div class="line">                                       .state_list = {&amp;controller_task_state_0_init,</div>
-<div class="line">                                                      &amp;controller_task_state_1_pos}</div>
+<div class="line">                                       .state_list = {&amp;<a class="code hl_function" href="controller__task_8h.html#a84fa19534f15c6dc0c3cd2f880de933c">controller_task_state_0_init</a>,</div>
+<div class="line">                                                      &amp;<a class="code hl_function" href="controller__task_8h.html#a7d0612cbe9eb15e7aa9a4437f189a49b">controller_task_state_1_pos</a>}</div>
 <div class="line">}</div>
+<div class="ttc" id="acontroller__task_8h_html_a7d0612cbe9eb15e7aa9a4437f189a49b"><div class="ttname"><a href="controller__task_8h.html#a7d0612cbe9eb15e7aa9a4437f189a49b">controller_task_state_1_pos</a></div><div class="ttdeci">void controller_task_state_1_pos(ControllerTask *controller_task)</div><div class="ttdoc">Executes the position control logic (State 1).</div><div class="ttdef"><b>Definition</b> controller_task.c:70</div></div>
+<div class="ttc" id="acontroller__task_8h_html_a84fa19534f15c6dc0c3cd2f880de933c"><div class="ttname"><a href="controller__task_8h.html#a84fa19534f15c6dc0c3cd2f880de933c">controller_task_state_0_init</a></div><div class="ttdeci">void controller_task_state_0_init(ControllerTask *controller_task)</div><div class="ttdoc">Initializes the controller task (State 0).</div><div class="ttdef"><b>Definition</b> controller_task.c:50</div></div>
 <div class="ttc" id="agroup__TIM__Channel_html_ga4ea100c1789b178f3cb46721b7257e2d"><div class="ttname"><a href="group__TIM__Channel.html#ga4ea100c1789b178f3cb46721b7257e2d">TIM_CHANNEL_3</a></div><div class="ttdeci">#define TIM_CHANNEL_3</div><div class="ttdef"><b>Definition</b> stm32f4xx_hal_tim.h:740</div></div>
 <div class="ttc" id="agroup__TIM__Channel_html_gad59ef74820ee8bf77fa1f8d589fde2ac"><div class="ttname"><a href="group__TIM__Channel.html#gad59ef74820ee8bf77fa1f8d589fde2ac">TIM_CHANNEL_4</a></div><div class="ttdeci">#define TIM_CHANNEL_4</div><div class="ttdef"><b>Definition</b> stm32f4xx_hal_tim.h:741</div></div>
 </div><!-- fragment -->
@@ -565,8 +569,8 @@ const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>hold_time</
 <div class="line">                                      .hadc = &amp;hadc1,</div>
 <div class="line">                                      .motor = &amp;mred,</div>
 <div class="line">                                      .encoder = &amp;red_encoder,</div>
-<div class="line">                                      .state_list = {&amp;controller_task_state_0_init,</div>
-<div class="line">                                                     &amp;controller_task_state_1_pos}</div>
+<div class="line">                                      .state_list = {&amp;<a class="code hl_function" href="controller__task_8h.html#a84fa19534f15c6dc0c3cd2f880de933c">controller_task_state_0_init</a>,</div>
+<div class="line">                                                     &amp;<a class="code hl_function" href="controller__task_8h.html#a7d0612cbe9eb15e7aa9a4437f189a49b">controller_task_state_1_pos</a>}</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>

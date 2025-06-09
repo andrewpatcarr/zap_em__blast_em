@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['dma_5fhandletypedef_0',['dma_handletypedef',['../group__DMA__Exported__Types.html#ga41b754a906b86bce54dc79938970138b',1,'DMA_HandleTypeDef:&#160;stm32f4xx_hal_dma.h'],['../group__DMA__Exported__Types.html#ga41b754a906b86bce54dc79938970138b',1,'DMA_HandleTypeDef:&#160;stm32f4xx_hal_dma.h']]]
+  ['adc_5ffcn_5ft_0',['adc_fcn_t',['../adc__task_8h.html#a428e6c4e514af97dcfa6384439aa8b5f',1,'adc_task.h']]],
+  ['adctask_1',['ADCTask',['../adc__task_8h.html#af81f6a235cb4fc4d469490efe4aded51',1,'adc_task.h']]]
 ];

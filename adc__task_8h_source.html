@@ -98,61 +98,66 @@ $(document).ready(function(){initNavTree('adc__task_8h_source.html',''); initRes
   <div class="headertitle"><div class="title">adc_task.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * adc_task.h</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *  Created on: Jun 5, 2025</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *      Author: andrewcarr</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef INC_ADC_TASK_H_</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define INC_ADC_TASK_H_</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;stm32f4xx_hal.h&quot;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;stdint.h&gt;</span> <span class="comment">// Allows use of standard integer types</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structControllerTask.html">ControllerTask</a> <a class="code hl_struct" href="structControllerTask.html">ControllerTask</a>;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structPhotoresistorTask.html">PhotoresistorTask</a> <a class="code hl_struct" href="structPhotoresistorTask.html">PhotoresistorTask</a>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structADCTask.html">ADCTask</a> <a class="code hl_struct" href="structADCTask.html">ADCTask</a>; <span class="comment">// forward declaration</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// all states take in a GameTask pointer</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">typedef</span> void (*adc_fcn_t)(<a class="code hl_struct" href="structADCTask.html">ADCTask</a> *adc_task);</div>
+<a href="adc__task_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef INC_ADC_TASK_H_</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define INC_ADC_TASK_H_</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;stm32f4xx_hal.h&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="adc__task_8h.html#ae036b0ffd4434888251544d89e1c8e08">   21</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structControllerTask.html">ControllerTask</a> <a class="code hl_struct" href="structControllerTask.html">ControllerTask</a>;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// A datatype for a structure to hold task configuration and state.</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// Additional fields can be added as desired.</span></div>
-<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structADCTask.html">   25</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structADCTask.html">ADCTask</a></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    int32_t             state;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    int32_t             num_states;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_struct" href="structControllerTask.html">ControllerTask</a>      *red_contr_ptr;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_struct" href="structControllerTask.html">ControllerTask</a>      *blue_contr_ptr;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_struct" href="structPhotoresistorTask.html">PhotoresistorTask</a>   *red_photor_ptr;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_struct" href="structPhotoresistorTask.html">PhotoresistorTask</a>   *blue_photor_ptr;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_struct" href="structADC__HandleTypeDef.html">ADC_HandleTypeDef</a>   *hadc;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    adc_fcn_t           state_list[];</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>};</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="adc__task_8h.html#ae9b3cb60589012712159106169307d42">   26</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structPhotoresistorTask.html">PhotoresistorTask</a> <a class="code hl_struct" href="structPhotoresistorTask.html">PhotoresistorTask</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="adc__task_8h.html#af81f6a235cb4fc4d469490efe4aded51">   31</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structADCTask.html">ADCTask</a> <a class="code hl_struct" href="structADCTask.html">ADCTask</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="adc__task_8h.html#a428e6c4e514af97dcfa6384439aa8b5f">   38</a></span><span class="keyword">typedef</span> void (*<a class="code hl_typedef" href="adc__task_8h.html#a428e6c4e514af97dcfa6384439aa8b5f">adc_fcn_t</a>)(<a class="code hl_struct" href="structADCTask.html">ADCTask</a> *adc_task);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="foldopen" id="foldopen00046" data-start="{" data-end="};">
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="structADCTask.html">   46</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structADCTask.html">ADCTask</a></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>{</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="structADCTask.html#af8ec6e123570f44094bcf2cb02b478f4">   48</a></span>    int32_t              <a class="code hl_variable" href="structADCTask.html#af8ec6e123570f44094bcf2cb02b478f4">state</a>;            </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="structADCTask.html#a0456e86c5e39324ddfd18e4185b27788">   49</a></span>    int32_t              <a class="code hl_variable" href="structADCTask.html#a0456e86c5e39324ddfd18e4185b27788">num_states</a>;       </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="structADCTask.html#a3ab8a7a6d2d172ea82943bcaa7f73a95">   50</a></span>    <a class="code hl_struct" href="structControllerTask.html">ControllerTask</a>       *<a class="code hl_variable" href="structADCTask.html#a3ab8a7a6d2d172ea82943bcaa7f73a95">red_contr_ptr</a>;   </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structADCTask.html#a263a88956209ef8a0d357294b5371681">   51</a></span>    <a class="code hl_struct" href="structControllerTask.html">ControllerTask</a>       *<a class="code hl_variable" href="structADCTask.html#a263a88956209ef8a0d357294b5371681">blue_contr_ptr</a>;  </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="structADCTask.html#ac0522422b7be935ddf767b4d492640e1">   52</a></span>    <a class="code hl_struct" href="structPhotoresistorTask.html">PhotoresistorTask</a>    *<a class="code hl_variable" href="structADCTask.html#ac0522422b7be935ddf767b4d492640e1">red_photor_ptr</a>;  </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="structADCTask.html#a876d30149c68cd30d82c8c9bc6453536">   53</a></span>    <a class="code hl_struct" href="structPhotoresistorTask.html">PhotoresistorTask</a>    *<a class="code hl_variable" href="structADCTask.html#a876d30149c68cd30d82c8c9bc6453536">blue_photor_ptr</a>; </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="structADCTask.html#af982c0fe5d77061049c468b599100134">   54</a></span>    <a class="code hl_struct" href="structADC__HandleTypeDef.html">ADC_HandleTypeDef</a>    *<a class="code hl_variable" href="structADCTask.html#af982c0fe5d77061049c468b599100134">hadc</a>;            </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="structADCTask.html#aef6da8c0ad88477359f064daf8a58365">   55</a></span>    <a class="code hl_typedef" href="adc__task_8h.html#a428e6c4e514af97dcfa6384439aa8b5f">adc_fcn_t</a>            <a class="code hl_variable" href="structADCTask.html#aef6da8c0ad88477359f064daf8a58365">state_list</a>[];     </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
 </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">// A prototype for each function implemented in task_1.c</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keywordtype">void</span> adc_task_state_0_init(<a class="code hl_struct" href="structADCTask.html">ADCTask</a> *adc_task);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keywordtype">void</span> adc_task_run(<a class="code hl_struct" href="structADCTask.html">ADCTask</a> *adc_task);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keywordtype">void</span> adc_task_state_1_read(<a class="code hl_struct" href="structADCTask.html">ADCTask</a> *adc_task);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#endif </span><span class="comment">/* INC_ADC_TASK_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="astructADCTask_html"><div class="ttname"><a href="structADCTask.html">ADCTask</a></div><div class="ttdef"><b>Definition</b> adc_task.h:26</div></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keywordtype">void</span> <a class="code hl_function" href="adc__task_8h.html#a804ed2efd3bfecfa4e7dffe7fbf1249d">adc_task_state_0_init</a>(<a class="code hl_struct" href="structADCTask.html">ADCTask</a> *adc_task);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keywordtype">void</span> <a class="code hl_function" href="adc__task_8h.html#a48d792d695802b538e359ad38a9729a4">adc_task_run</a>(<a class="code hl_struct" href="structADCTask.html">ADCTask</a> *adc_task);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keywordtype">void</span> <a class="code hl_function" href="adc__task_8h.html#a9535953d4539b4d8ce345c521fa43e2f">adc_task_state_1_read</a>(<a class="code hl_struct" href="structADCTask.html">ADCTask</a> *adc_task);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#endif </span><span class="comment">/* INC_ADC_TASK_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aadc__task_8h_html_a428e6c4e514af97dcfa6384439aa8b5f"><div class="ttname"><a href="adc__task_8h.html#a428e6c4e514af97dcfa6384439aa8b5f">adc_fcn_t</a></div><div class="ttdeci">void(* adc_fcn_t)(ADCTask *adc_task)</div><div class="ttdoc">Function pointer type for ADC state functions.</div><div class="ttdef"><b>Definition</b> adc_task.h:38</div></div>
+<div class="ttc" id="aadc__task_8h_html_a48d792d695802b538e359ad38a9729a4"><div class="ttname"><a href="adc__task_8h.html#a48d792d695802b538e359ad38a9729a4">adc_task_run</a></div><div class="ttdeci">void adc_task_run(ADCTask *adc_task)</div><div class="ttdoc">Executes the current ADC task state.</div><div class="ttdef"><b>Definition</b> adc_task.c:36</div></div>
+<div class="ttc" id="aadc__task_8h_html_a804ed2efd3bfecfa4e7dffe7fbf1249d"><div class="ttname"><a href="adc__task_8h.html#a804ed2efd3bfecfa4e7dffe7fbf1249d">adc_task_state_0_init</a></div><div class="ttdeci">void adc_task_state_0_init(ADCTask *adc_task)</div><div class="ttdoc">Initializes the ADC task (state 0).</div><div class="ttdef"><b>Definition</b> adc_task.c:58</div></div>
+<div class="ttc" id="aadc__task_8h_html_a9535953d4539b4d8ce345c521fa43e2f"><div class="ttname"><a href="adc__task_8h.html#a9535953d4539b4d8ce345c521fa43e2f">adc_task_state_1_read</a></div><div class="ttdeci">void adc_task_state_1_read(ADCTask *adc_task)</div><div class="ttdoc">Reads and assigns values from the ADC DMA buffer (state 1).</div><div class="ttdef"><b>Definition</b> adc_task.c:75</div></div>
+<div class="ttc" id="astructADCTask_html"><div class="ttname"><a href="structADCTask.html">ADCTask</a></div><div class="ttdoc">Structure that represents the ADC task state and configuration.</div><div class="ttdef"><b>Definition</b> adc_task.h:47</div></div>
+<div class="ttc" id="astructADCTask_html_a0456e86c5e39324ddfd18e4185b27788"><div class="ttname"><a href="structADCTask.html#a0456e86c5e39324ddfd18e4185b27788">ADCTask::num_states</a></div><div class="ttdeci">int32_t num_states</div><div class="ttdef"><b>Definition</b> adc_task.h:49</div></div>
+<div class="ttc" id="astructADCTask_html_a263a88956209ef8a0d357294b5371681"><div class="ttname"><a href="structADCTask.html#a263a88956209ef8a0d357294b5371681">ADCTask::blue_contr_ptr</a></div><div class="ttdeci">ControllerTask * blue_contr_ptr</div><div class="ttdef"><b>Definition</b> adc_task.h:51</div></div>
+<div class="ttc" id="astructADCTask_html_a3ab8a7a6d2d172ea82943bcaa7f73a95"><div class="ttname"><a href="structADCTask.html#a3ab8a7a6d2d172ea82943bcaa7f73a95">ADCTask::red_contr_ptr</a></div><div class="ttdeci">ControllerTask * red_contr_ptr</div><div class="ttdef"><b>Definition</b> adc_task.h:50</div></div>
+<div class="ttc" id="astructADCTask_html_a876d30149c68cd30d82c8c9bc6453536"><div class="ttname"><a href="structADCTask.html#a876d30149c68cd30d82c8c9bc6453536">ADCTask::blue_photor_ptr</a></div><div class="ttdeci">PhotoresistorTask * blue_photor_ptr</div><div class="ttdef"><b>Definition</b> adc_task.h:53</div></div>
+<div class="ttc" id="astructADCTask_html_ac0522422b7be935ddf767b4d492640e1"><div class="ttname"><a href="structADCTask.html#ac0522422b7be935ddf767b4d492640e1">ADCTask::red_photor_ptr</a></div><div class="ttdeci">PhotoresistorTask * red_photor_ptr</div><div class="ttdef"><b>Definition</b> adc_task.h:52</div></div>
+<div class="ttc" id="astructADCTask_html_aef6da8c0ad88477359f064daf8a58365"><div class="ttname"><a href="structADCTask.html#aef6da8c0ad88477359f064daf8a58365">ADCTask::state_list</a></div><div class="ttdeci">adc_fcn_t state_list[]</div><div class="ttdef"><b>Definition</b> adc_task.h:55</div></div>
+<div class="ttc" id="astructADCTask_html_af8ec6e123570f44094bcf2cb02b478f4"><div class="ttname"><a href="structADCTask.html#af8ec6e123570f44094bcf2cb02b478f4">ADCTask::state</a></div><div class="ttdeci">int32_t state</div><div class="ttdef"><b>Definition</b> adc_task.h:48</div></div>
+<div class="ttc" id="astructADCTask_html_af982c0fe5d77061049c468b599100134"><div class="ttname"><a href="structADCTask.html#af982c0fe5d77061049c468b599100134">ADCTask::hadc</a></div><div class="ttdeci">ADC_HandleTypeDef * hadc</div><div class="ttdef"><b>Definition</b> adc_task.h:54</div></div>
 <div class="ttc" id="astructADC__HandleTypeDef_html"><div class="ttname"><a href="structADC__HandleTypeDef.html">ADC_HandleTypeDef</a></div><div class="ttdoc">ADC handle Structure definition.</div><div class="ttdef"><b>Definition</b> stm32f4xx_hal_adc.h:197</div></div>
-<div class="ttc" id="astructControllerTask_html"><div class="ttname"><a href="structControllerTask.html">ControllerTask</a></div><div class="ttdef"><b>Definition</b> controller_task.h:23</div></div>
+<div class="ttc" id="astructControllerTask_html"><div class="ttname"><a href="structControllerTask.html">ControllerTask</a></div><div class="ttdoc">Structure that defines the controller task.</div><div class="ttdef"><b>Definition</b> controller_task.h:38</div></div>
 <div class="ttc" id="astructPhotoresistorTask_html"><div class="ttname"><a href="structPhotoresistorTask.html">PhotoresistorTask</a></div><div class="ttdef"><b>Definition</b> photoresistor_task.h:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_0c717964e906cb3c8d6ecb94b7a6ffc2.html">CODE</a></li><li class="navelem"><a class="el" href="dir_d9879f962d42fd8f8382b1bc20e77e8e.html">Core</a></li><li class="navelem"><a class="el" href="dir_530c8ccfd57a6a82d90b37bdfa4188e0.html">Inc</a></li><li class="navelem"><b>adc_task.h</b></li>
+    <li class="navelem"><a class="el" href="dir_0c717964e906cb3c8d6ecb94b7a6ffc2.html">CODE</a></li><li class="navelem"><a class="el" href="dir_d9879f962d42fd8f8382b1bc20e77e8e.html">Core</a></li><li class="navelem"><a class="el" href="dir_530c8ccfd57a6a82d90b37bdfa4188e0.html">Inc</a></li><li class="navelem"><a class="el" href="adc__task_8h.html">adc_task.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
