@@ -1,0 +1,5 @@
+../Core/Src/game_task.c:17:6:game_task_run	3
+../Core/Src/game_task.c:42:6:game_task_state_0_init	1
+../Core/Src/game_task.c:54:6:game_task_state_1_home	2
+../Core/Src/game_task.c:73:6:game_task_state_2_play	16
+../Core/Src/game_task.c:155:6:game_task_state_3_end	7

@@ -31,7 +31,7 @@
 #include "photoresistor_task.h"
 #include "adc_task.h"
 #include "encoder_driver.h"
-
+#include "stm32f4xx_it.h"
 #include <stdint.h>
 /* USER CODE END Includes */
 
@@ -67,9 +67,11 @@ TIM_HandleTypeDef htim9;
 uint8_t red_held = 0, blue_held = 0;
 uint32_t red_start = 0, blue_start = 0;
 uint32_t red_elapsed = 0, blue_elapsed = 0;
-const uint32_t hold_time = 2000000; // 2s @ 1MHz
+const uint32_t hold_time = 2000; // 2s @ 1ms
 void calibration(void);
 void wait_for_stall(encoder_t *encoder);
+
+
 // create structs here so that variable pointers can be passed around
 motor_t mred = {
 		.tim = &htim1,
@@ -128,13 +130,13 @@ PhotoresistorTask blue_photoresistor_task = {.state = 0,
 											.num_states = 3,
 											.hit_flag = 0,
 											.adc_val = 0,
-											.thresh = 2500,
+											.thresh = 2000,
 											.zero = 0,
 											.state_list = {&photoresistor_task_state_0_init,
 													       &photoresistor_task_state_1_look,
 														   &photoresistor_task_state_2_hit}
 };
-GameTask game_task = {.state = 0,
+GameTask game_task = {.state = 0, //delay timer in .1 ms
                       .num_states = 4,
 					  .play_flag = 0,
 					  .score_red = 0,
@@ -143,10 +145,12 @@ GameTask game_task = {.state = 0,
 					  .score_blue_prev = 0,
 					  .score_thresh = 5,
 					  .num = 0,
-					  .delay_start = 0,
-					  .delay_flag = 0,
-					  .delay = 2000000, 	// 2 second delay
-					  .end_delay = 5000000,	// 3 second delay
+					  .red_delay_start = 0,
+					  .blue_delay_start = 0,
+					  .red_delay_flag = 0,
+					  .blue_delay_flag = 0,
+					  .delay = 2000, 	// 2 second delay
+					  .end_delay = 5000,	// 3 second delay
 					  .htim = &htim9,
 					  .sound_task_ptr = &sound_task,
 					  .red_photoresistor_task_ptr = &red_photoresistor_task,
@@ -318,7 +322,7 @@ int main(void)
   HAL_TIM_Base_Start(&htim1);
   HAL_TIM_Base_Start_IT(&htim2);
   HAL_TIM_Base_Start(&htim4);
-  HAL_TIM_Base_Start(&htim9);
+  HAL_TIM_Base_Start_IT(&htim9);
 
   HAL_TIM_Encoder_Start(red_encoder.htim, TIM_CHANNEL_ALL);
   HAL_TIM_Encoder_Start(blue_encoder.htim, TIM_CHANNEL_ALL);
@@ -355,7 +359,7 @@ int main(void)
 	  // set play flag by each player holding button for 2 seconds
 	  if (red_held && blue_held && game_task.play_flag == 0)
 	  {
-	      uint32_t now = __HAL_TIM_GET_COUNTER(game_task.htim);
+	      uint32_t now = ms_counter;
 	      red_elapsed = now - red_start;
 	      blue_elapsed = now - blue_start;
 
@@ -850,9 +854,9 @@ static void MX_TIM9_Init(void)
 
   /* USER CODE END TIM9_Init 1 */
   htim9.Instance = TIM9;
-  htim9.Init.Prescaler = 95;
+  htim9.Init.Prescaler = 959;
   htim9.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim9.Init.Period = 65535;
+  htim9.Init.Period = 99;
   htim9.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim9.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim9) != HAL_OK)
@@ -959,9 +963,9 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
 	if (GPIO_Pin == GPIO_PIN_13) // RED
 	    {
-	        if (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_13) == GPIO_PIN_RESET) {
+	        if (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_13) == GPIO_PIN_RESET){// && game_task.red_delay_flag == 0) {
 	            red_held = 1;
-	            red_start = __HAL_TIM_GET_COUNTER(game_task.htim);
+	            red_start = ms_counter;
 	            red_shoot_task.button = 1;
 	            if (game_task.play_flag == 1){
 	            	sound_task.laser_snd = 1;
@@ -971,7 +975,8 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 					sound_task.state = 6;
 				}
 
-	        } else {
+	        }
+	        else {
 	            red_held = 0;
 	            red_shoot_task.button = 0;
 	        }
@@ -979,9 +984,9 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 
 	    if (GPIO_Pin == GPIO_PIN_12) // BLUE
 	    {
-	        if (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_12) == GPIO_PIN_RESET) {
+	        if (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_12) == GPIO_PIN_RESET){// && game_task.blue_delay_flag == 0) {
 	            blue_held = 1;
-	            blue_start = __HAL_TIM_GET_COUNTER(game_task.htim);
+	            blue_start = ms_counter;
 	            blue_shoot_task.button = 1;
 	            if (game_task.play_flag == 1){
 					sound_task.laser_snd = 1;
@@ -991,7 +996,8 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 				}
 
 				}
-	        } else {
+	        }
+	        else {
 	            blue_held = 0;
 	            blue_shoot_task.button = 0;
 	        }

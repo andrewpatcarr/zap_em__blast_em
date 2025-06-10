@@ -1,5 +1,5 @@
-../Core/Src/game_task.c:17:6:game_task_run	3
-../Core/Src/game_task.c:42:6:game_task_state_0_init	1
-../Core/Src/game_task.c:54:6:game_task_state_1_home	2
-../Core/Src/game_task.c:73:6:game_task_state_2_play	13
-../Core/Src/game_task.c:150:6:game_task_state_3_end	7
+../Core/Src/game_task.c:18:6:game_task_run	3
+../Core/Src/game_task.c:43:6:game_task_state_0_init	1
+../Core/Src/game_task.c:55:6:game_task_state_1_home	2
+../Core/Src/game_task.c:74:6:game_task_state_2_play	18
+../Core/Src/game_task.c:160:6:game_task_state_3_end	7

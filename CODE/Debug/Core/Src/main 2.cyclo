@@ -1,0 +1,15 @@
+../Core/Src/main.c:275:5:main	7
+../Core/Src/main.c:396:6:SystemClock_Config	3
+../Core/Src/main.c:442:13:MX_ADC1_Init	6
+../Core/Src/main.c:521:13:MX_I2C1_Init	2
+../Core/Src/main.c:555:13:MX_TIM1_Init	8
+../Core/Src/main.c:632:13:MX_TIM2_Init	6
+../Core/Src/main.c:691:13:MX_TIM3_Init	3
+../Core/Src/main.c:740:13:MX_TIM4_Init	5
+../Core/Src/main.c:793:13:MX_TIM5_Init	3
+../Core/Src/main.c:842:13:MX_TIM9_Init	3
+../Core/Src/main.c:878:13:MX_DMA_Init	1
+../Core/Src/main.c:896:13:MX_GPIO_Init	1
+../Core/Src/main.c:960:6:HAL_GPIO_EXTI_Callback	9
+../Core/Src/main.c:1013:6:calibration	10
+../Core/Src/main.c:1092:6:Error_Handler	1

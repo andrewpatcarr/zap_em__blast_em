@@ -32,7 +32,8 @@ Core/Src/game_task.o: ../Core/Src/game_task.c ../Core/Inc/motor_driver.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  ../Core/Inc/game_task.h ../Core/Inc/sound_task.h \
- ../Core/Inc/photoresistor_task.h ../Core/Inc/lcd.h
+ ../Core/Inc/photoresistor_task.h ../Core/Inc/stm32f4xx_it.h \
+ ../Core/Inc/lcd.h
 ../Core/Inc/motor_driver.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
@@ -69,4 +70,5 @@ Core/Src/game_task.o: ../Core/Src/game_task.c ../Core/Inc/motor_driver.h \
 ../Core/Inc/game_task.h:
 ../Core/Inc/sound_task.h:
 ../Core/Inc/photoresistor_task.h:
+../Core/Inc/stm32f4xx_it.h:
 ../Core/Inc/lcd.h:

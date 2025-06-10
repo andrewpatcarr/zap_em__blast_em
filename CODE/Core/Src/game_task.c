@@ -9,6 +9,7 @@
 #include "sound_task.h"
 #include "photoresistor_task.h"
 #include "stm32f4xx_hal_tim.h"
+#include "stm32f4xx_it.h"
 #include "lcd.h"
 
 #include <stdio.h>
@@ -77,11 +78,11 @@ void game_task_state_2_play(GameTask *game_task)
 
 
 	// score counting and delaying
-	if (game_task->red_photoresistor_task_ptr->hit_flag && game_task->delay_flag == 0){
+	if (game_task->red_photoresistor_task_ptr->hit_flag && game_task->red_delay_flag == 0){
 		game_task->score_blue++;
 		game_task->red_photoresistor_task_ptr->hit_flag = 0;
-		game_task->delay_flag = 1;
-		game_task->delay_start = __HAL_TIM_GET_COUNTER(game_task->htim);
+		game_task->red_delay_flag = 1;
+		game_task->red_delay_start = ms_counter;
 		game_task->sound_task_ptr->hit_snd = 1;
 		game_task->sound_task_ptr->state = 1;
 		if(playing){
@@ -89,11 +90,11 @@ void game_task_state_2_play(GameTask *game_task)
 			game_task->sound_task_ptr->state = 6;
 		}
 	}
-	if (game_task->blue_photoresistor_task_ptr->hit_flag && game_task->delay_flag == 0){
+	if (game_task->blue_photoresistor_task_ptr->hit_flag && game_task->blue_delay_flag == 0){
 		game_task->score_red++;
 		game_task->blue_photoresistor_task_ptr->hit_flag = 0;
-		game_task->delay_flag = 1;
-		game_task->delay_start = __HAL_TIM_GET_COUNTER(game_task->htim);
+		game_task->blue_delay_flag = 1;
+		game_task->blue_delay_start = ms_counter;
 		game_task->sound_task_ptr->hit_snd = 1;
 		game_task->sound_task_ptr->state = 1;
 		if(playing){
@@ -102,9 +103,16 @@ void game_task_state_2_play(GameTask *game_task)
 		}
 	}
 
-	if ((__HAL_TIM_GET_COUNTER(game_task->htim) - game_task->delay_start) > game_task->delay)
+	if ((ms_counter - game_task->red_delay_start) > game_task->delay && game_task->red_delay_flag)
 	{
-		game_task->delay_flag = 0;
+
+		game_task->red_delay_flag = 0;
+		game_task->red_photoresistor_task_ptr->hit_flag = 0;
+	}
+	if ((ms_counter - game_task->blue_delay_start) > game_task->delay && game_task->blue_delay_flag)
+	{
+		game_task->blue_delay_flag = 0;
+		game_task->blue_photoresistor_task_ptr->hit_flag = 0;
 	}
 
 	// add thing that prints score of each on the LCD
@@ -124,13 +132,13 @@ void game_task_state_2_play(GameTask *game_task)
 	}
 
 	// check to see if score changed for the lcd
-	if (game_task->score_red != game_task->score_red_prev){
+	if (game_task->score_red != game_task->score_red_prev && game_task->score_red < game_task->score_thresh){
 		sprintf(r_score,"%ld",game_task->score_red);
 		lcd_set_cursor(2, 6);
 		lcd_print(r_score);
 		game_task->score_red_prev = game_task->score_red;
 	}
-	if (game_task->score_blue != game_task->score_blue_prev){
+	if (game_task->score_blue != game_task->score_blue_prev && game_task->score_blue < game_task->score_thresh){
 		sprintf(b_score,"%ld",game_task->score_blue);
 		lcd_set_cursor(3, 6);
 		lcd_print(b_score);
@@ -140,8 +148,10 @@ void game_task_state_2_play(GameTask *game_task)
 	if (game_task->score_red >= game_task->score_thresh || game_task->score_blue >= game_task->score_thresh)
 	{
 		game_task->state = 3;
-		game_task->delay_flag = 0;
+		game_task->red_delay_flag = 0;
+		game_task->blue_delay_flag = 0;
 		game_task->sound_task_ptr->win_snd = 1;
+
 	}
 }
 // A function to implement state 3
@@ -149,62 +159,77 @@ void game_task_state_2_play(GameTask *game_task)
 // Prints messages and sets sound flags
 void game_task_state_3_end(GameTask *game_task)
 {
+	char r_wins[50];
+	char b_wins[50];
+
+
+	//              01234567890123456789
+
 	if (game_task->score_blue >= game_task->score_thresh)
 	{
 		//		// print win message and set end sound
-		if(game_task->delay_flag == 0)
+		if(game_task->blue_delay_flag == 0)
 		{
-		lcd_set_cursor(0, 0);
-		lcd_print("                    ");
-		lcd_set_cursor(1, 0);
-		lcd_print("     GAME OVER!     ");
-		lcd_set_cursor(2, 0);
-		lcd_print("     Blue Wins!!     ");
-		lcd_set_cursor(3, 0);
-		lcd_print("                    ");
-		game_task->delay_flag = 1;
-		game_task->delay_start = __HAL_TIM_GET_COUNTER(game_task->htim);
+
+			sprintf(b_wins,"       %ld to %ld       ",game_task->score_blue, game_task->score_red);
+			lcd_set_cursor(0, 0);
+			lcd_print("     GAME OVER!     ");
+			lcd_set_cursor(1, 0);
+			lcd_print("                    ");
+			lcd_set_cursor(2, 0);
+			lcd_print("     Blue Wins!!    ");
+			lcd_set_cursor(3, 0);
+			lcd_print(b_wins);
+
+			game_task->blue_delay_flag = 1;
+			game_task->blue_delay_start = ms_counter;
 		}
-		uint32_t now = __HAL_TIM_GET_COUNTER(game_task->htim);
-		if ((uint32_t)(now - game_task->delay_start) > game_task->end_delay)
+		uint32_t now = ms_counter;
+		if ((uint32_t)(now - game_task->blue_delay_start) > game_task->end_delay)
 		{
 		    game_task->play_flag = 0;
 		    game_task->state = 1;
 		    game_task->score_blue = 0;
 		    game_task->score_red = 0;
 		    game_task->num = 0;
-		    game_task->delay_flag = 0;
+		    game_task->blue_delay_flag = 0;
 		    lcd_clear();
 		}
 	}
 	if (game_task->score_red >= game_task->score_thresh)
 		{
 			//		// print win message and set end sound
-			if(game_task->delay_flag == 0)
+			if(game_task->red_delay_flag == 0)
 			{
-			lcd_set_cursor(0, 0);
-			lcd_print("                    ");
-			lcd_set_cursor(1, 0);
-			lcd_print("     GAME OVER!     ");
-			lcd_set_cursor(2, 0);
-			lcd_print("     Red Wins!!     ");
-			lcd_set_cursor(3, 0);
-			lcd_print("                    ");
-			game_task->delay_flag = 1;
-			game_task->delay_start = __HAL_TIM_GET_COUNTER(game_task->htim);
+				sprintf(r_wins,"       %ld to %ld       ",game_task->score_red, game_task->score_blue);
+				lcd_set_cursor(0, 0);
+				lcd_print("     GAME OVER!     ");
+				//         01234567890123456789
+				lcd_set_cursor(1, 0);
+				lcd_print("                    ");
+				lcd_set_cursor(2, 0);
+				lcd_print("     Red Wins!!     ");
+				lcd_set_cursor(3, 0);
+				lcd_print(r_wins);
+
+
+				game_task->red_delay_flag = 1;
+				game_task->red_delay_start = ms_counter;
 			}
-			uint32_t now = __HAL_TIM_GET_COUNTER(game_task->htim);
-			if ((uint32_t)(now - game_task->delay_start) > game_task->end_delay)
+			uint32_t now = ms_counter;
+			if ((uint32_t)(now - game_task->red_delay_start) > game_task->end_delay)
 			{
 			    game_task->play_flag = 0;
 			    game_task->state = 1;
 			    game_task->score_blue = 0;
 			    game_task->score_red = 0;
 			    game_task->num = 0;
-			    game_task->delay_flag = 0;
+			    game_task->red_delay_flag = 0;
 			    lcd_clear();
 			}
 		}
+	game_task->red_photoresistor_task_ptr->hit_flag = 0;
+	game_task->blue_photoresistor_task_ptr->hit_flag = 0;
 
 }
 

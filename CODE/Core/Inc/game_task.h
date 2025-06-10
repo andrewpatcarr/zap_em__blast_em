@@ -31,8 +31,10 @@ struct GameTask
     int32_t 			score_blue_prev;
     int32_t				score_thresh;
     int32_t				num;
-    uint32_t			delay_start;
-    int32_t				delay_flag;
+    uint32_t			red_delay_start;
+    uint32_t			blue_delay_start;
+    int32_t				red_delay_flag;
+    int32_t				blue_delay_flag;
     uint32_t			delay;
     uint32_t			end_delay;
 

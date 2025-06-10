@@ -36,7 +36,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Core/Inc/game_task.h ../Core/Inc/sound_task.h \
  ../Core/Inc/shoot_task.h ../Core/Inc/lcd.h \
  ../Core/Inc/photoresistor_task.h ../Core/Inc/adc_task.h \
- ../Core/Inc/encoder_driver.h
+ ../Core/Inc/encoder_driver.h ../Core/Inc/stm32f4xx_it.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
@@ -81,3 +81,4 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/photoresistor_task.h:
 ../Core/Inc/adc_task.h:
 ../Core/Inc/encoder_driver.h:
+../Core/Inc/stm32f4xx_it.h:

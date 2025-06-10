@@ -766,3 +766,298 @@
 2025-06-09 17:14:46,576 [INFO] ProjectBuilder:5191 - Time for Generating toolchain IDE Files: 3888mS.
 2025-06-09 17:14:46,585 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 3mS.
 2025-06-09 17:14:46,592 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 1mS.
+2025-06-09 19:28:24,020 [INFO] WebApp:194 - Connection lost
+2025-06-09 19:29:54,169 [INFO] WebApp:191 - Connection restablished
+2025-06-09 19:38:53,582 [INFO] WebApp:194 - Connection lost
+2025-06-09 19:39:02,552 [INFO] WebApp:191 - Connection restablished
+2025-06-09 19:39:21,616 [INFO] WebApp:194 - Connection lost
+2025-06-09 20:34:36,292 [INFO] WebApp:191 - Connection restablished
+2025-06-09 20:58:56,964 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-06-09 20:59:34,447 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-06-09 20:59:51,995 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 747575920 Bytes (858783744)
+2025-06-09 20:59:52,600 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 777106208 Bytes (858783744)
+2025-06-09 20:59:54,115 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2025-06-09 20:59:54,118 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: DMA
+2025-06-09 20:59:54,119 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: TIM1_8
+2025-06-09 20:59:54,119 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: TIM1_8
+2025-06-09 20:59:54,119 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: TIM1_8
+2025-06-09 20:59:54,120 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: TIM1_8
+2025-06-09 20:59:54,120 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: TIM1_8
+2025-06-09 20:59:54,120 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: TIM1_8
+2025-06-09 20:59:54,120 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2025-06-09 20:59:54,121 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2025-06-09 20:59:54,122 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: ADC
+2025-06-09 20:59:54,123 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2025-06-09 20:59:54,125 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: I2C
+2025-06-09 20:59:54,128 [INFO] CodeGenerator:882 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.14.1.202504091515//db/
+2025-06-09 20:59:54,173 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-06-09 20:59:54,176 [INFO] Argument:327 - 	 sub Args: 
+2025-06-09 20:59:54,177 [INFO] Argument:325 - Argument : Instancevalue: DMA2_Stream0
+2025-06-09 20:59:54,178 [INFO] Argument:335 - Argument : Instancevalue: DMA2_Stream0
+2025-06-09 20:59:54,178 [INFO] Argument:325 - Argument : Initvalue: null
+2025-06-09 20:59:54,178 [INFO] Argument:327 - 	 sub Args: 
+2025-06-09 20:59:54,179 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_0
+2025-06-09 20:59:54,179 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_0
+2025-06-09 20:59:54,179 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-06-09 20:59:54,179 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-06-09 20:59:54,179 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-06-09 20:59:54,179 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-06-09 20:59:54,180 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-06-09 20:59:54,180 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-06-09 20:59:54,180 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2025-06-09 20:59:54,180 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2025-06-09 20:59:54,180 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2025-06-09 20:59:54,180 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2025-06-09 20:59:54,180 [INFO] Argument:325 - Argument : Modevalue: DMA_CIRCULAR
+2025-06-09 20:59:54,181 [INFO] Argument:335 - Argument : Modevalue: DMA_CIRCULAR
+2025-06-09 20:59:54,181 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_MEDIUM
+2025-06-09 20:59:54,182 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_MEDIUM
+2025-06-09 20:59:54,182 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2025-06-09 20:59:54,182 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2025-06-09 20:59:54,182 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2025-06-09 20:59:54,182 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2025-06-09 20:59:54,182 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2025-06-09 20:59:54,182 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2025-06-09 20:59:54,182 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2025-06-09 20:59:54,182 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2025-06-09 20:59:54,182 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-06-09 20:59:54,182 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-06-09 20:59:54,182 [INFO] Argument:325 - Argument : Statevalue: null
+2025-06-09 20:59:54,182 [INFO] Argument:335 - Argument : Statevalue: null
+2025-06-09 20:59:54,182 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-06-09 20:59:54,182 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-06-09 20:59:54,182 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-06-09 20:59:54,182 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-06-09 20:59:54,183 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-06-09 20:59:54,183 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-06-09 20:59:54,183 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2025-06-09 20:59:54,183 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2025-06-09 20:59:54,183 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-06-09 20:59:54,183 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-06-09 20:59:54,183 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-06-09 20:59:54,183 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-06-09 20:59:54,189 [WARN] IP:2250 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2025-06-09 20:59:54,190 [WARN] IP:2250 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2025-06-09 20:59:54,384 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/license.tmp_save
+2025-06-09 20:59:54,850 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/license.tmp
+2025-06-09 20:59:54,975 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/gpio.tmp_save
+2025-06-09 20:59:55,240 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/gpio.tmp
+2025-06-09 20:59:56,191 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/dma.tmp_save
+2025-06-09 20:59:56,315 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/dma.tmp
+2025-06-09 20:59:56,317 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/dma_GV.tmp_save
+2025-06-09 20:59:56,411 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/dma_GV.tmp
+2025-06-09 20:59:56,435 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Src/stm32f4xx_it.c_save
+2025-06-09 20:59:56,771 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Src/stm32f4xx_it.c
+2025-06-09 20:59:56,774 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Inc/stm32f4xx_it.h_save
+2025-06-09 20:59:56,886 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Inc/stm32f4xx_it.h
+2025-06-09 20:59:56,900 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Src/stm32f4xx_hal_msp.c_save
+2025-06-09 20:59:57,143 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Src/stm32f4xx_hal_msp.c
+2025-06-09 20:59:57,148 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/system.tmp_save
+2025-06-09 20:59:57,238 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/system.tmp
+2025-06-09 20:59:57,248 [INFO] CodeEngine:319 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Inc/stm32f4xx_hal_conf.h_save
+2025-06-09 20:59:57,357 [INFO] CodeEngine:343 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Inc/stm32f4xx_hal_conf.h
+2025-06-09 20:59:57,448 [WARN] IPConfigManager:3790 - IP not found : TIM
+2025-06-09 20:59:57,449 [WARN] CodeGenerator:4198 - IP not found : null
+2025-06-09 20:59:57,453 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Inc/main.h_save
+2025-06-09 20:59:57,609 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Inc/main.h
+2025-06-09 20:59:57,614 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Src/main.c_save
+2025-06-09 20:59:57,833 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Src/main.c
+2025-06-09 20:59:58,118 [INFO] ProjectBuilder:3324 - Time for Copy HAL[1] : 95mS.
+2025-06-09 20:59:58,122 [INFO] ProjectBuilder:4912 - Project Generator version: 4.6.0.1-B1
+2025-06-09 20:59:58,246 [INFO] ConfigFileManager:1590 - The Die is : DIE431
+2025-06-09 21:00:00,508 [INFO] ProjectBuilder:5191 - Time for Generating toolchain IDE Files: 2383mS.
+2025-06-09 21:00:00,509 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 1mS.
+2025-06-09 21:00:00,513 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 0mS.
+2025-06-09 21:11:31,466 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-06-09 21:11:40,216 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-06-09 21:11:43,894 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-06-09 21:12:58,556 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 458546032 Bytes (858783744)
+2025-06-09 21:13:00,720 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 549245808 Bytes (858783744)
+2025-06-09 21:13:01,374 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2025-06-09 21:13:01,375 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: DMA
+2025-06-09 21:13:01,375 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: TIM1_8
+2025-06-09 21:13:01,376 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: TIM1_8
+2025-06-09 21:13:01,376 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: TIM1_8
+2025-06-09 21:13:01,376 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: TIM1_8
+2025-06-09 21:13:01,376 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: TIM1_8
+2025-06-09 21:13:01,376 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: TIM1_8
+2025-06-09 21:13:01,376 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2025-06-09 21:13:01,376 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2025-06-09 21:13:01,377 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: ADC
+2025-06-09 21:13:01,377 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2025-06-09 21:13:01,377 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: I2C
+2025-06-09 21:13:01,378 [INFO] CodeGenerator:882 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.14.1.202504091515//db/
+2025-06-09 21:13:01,396 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-06-09 21:13:01,396 [INFO] Argument:327 - 	 sub Args: 
+2025-06-09 21:13:01,396 [INFO] Argument:325 - Argument : Instancevalue: DMA2_Stream0
+2025-06-09 21:13:01,396 [INFO] Argument:335 - Argument : Instancevalue: DMA2_Stream0
+2025-06-09 21:13:01,396 [INFO] Argument:325 - Argument : Initvalue: null
+2025-06-09 21:13:01,396 [INFO] Argument:327 - 	 sub Args: 
+2025-06-09 21:13:01,397 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_0
+2025-06-09 21:13:01,397 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_0
+2025-06-09 21:13:01,397 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-06-09 21:13:01,398 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-06-09 21:13:01,398 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-06-09 21:13:01,398 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-06-09 21:13:01,399 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-06-09 21:13:01,399 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-06-09 21:13:01,399 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2025-06-09 21:13:01,399 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2025-06-09 21:13:01,399 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2025-06-09 21:13:01,399 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2025-06-09 21:13:01,399 [INFO] Argument:325 - Argument : Modevalue: DMA_CIRCULAR
+2025-06-09 21:13:01,399 [INFO] Argument:335 - Argument : Modevalue: DMA_CIRCULAR
+2025-06-09 21:13:01,400 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_MEDIUM
+2025-06-09 21:13:01,401 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_MEDIUM
+2025-06-09 21:13:01,401 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2025-06-09 21:13:01,401 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2025-06-09 21:13:01,401 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2025-06-09 21:13:01,401 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2025-06-09 21:13:01,402 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2025-06-09 21:13:01,402 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2025-06-09 21:13:01,402 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2025-06-09 21:13:01,402 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2025-06-09 21:13:01,402 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-06-09 21:13:01,402 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-06-09 21:13:01,402 [INFO] Argument:325 - Argument : Statevalue: null
+2025-06-09 21:13:01,402 [INFO] Argument:335 - Argument : Statevalue: null
+2025-06-09 21:13:01,402 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-06-09 21:13:01,403 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-06-09 21:13:01,404 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-06-09 21:13:01,404 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-06-09 21:13:01,405 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-06-09 21:13:01,405 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-06-09 21:13:01,405 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2025-06-09 21:13:01,405 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2025-06-09 21:13:01,405 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-06-09 21:13:01,405 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-06-09 21:13:01,405 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-06-09 21:13:01,405 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-06-09 21:13:01,411 [WARN] IP:2250 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2025-06-09 21:13:01,413 [WARN] IP:2250 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2025-06-09 21:13:01,569 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/license.tmp_save
+2025-06-09 21:13:01,899 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/license.tmp
+2025-06-09 21:13:02,010 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/gpio.tmp_save
+2025-06-09 21:13:02,231 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/gpio.tmp
+2025-06-09 21:13:03,231 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/dma.tmp_save
+2025-06-09 21:13:03,361 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/dma.tmp
+2025-06-09 21:13:03,363 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/dma_GV.tmp_save
+2025-06-09 21:13:03,453 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/dma_GV.tmp
+2025-06-09 21:13:03,465 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Src/stm32f4xx_it.c_save
+2025-06-09 21:13:03,851 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Src/stm32f4xx_it.c
+2025-06-09 21:13:03,853 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Inc/stm32f4xx_it.h_save
+2025-06-09 21:13:03,944 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Inc/stm32f4xx_it.h
+2025-06-09 21:13:03,951 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Src/stm32f4xx_hal_msp.c_save
+2025-06-09 21:13:04,193 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Src/stm32f4xx_hal_msp.c
+2025-06-09 21:13:04,196 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/system.tmp_save
+2025-06-09 21:13:04,283 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/system.tmp
+2025-06-09 21:13:04,292 [INFO] CodeEngine:319 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Inc/stm32f4xx_hal_conf.h_save
+2025-06-09 21:13:04,461 [INFO] CodeEngine:343 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Inc/stm32f4xx_hal_conf.h
+2025-06-09 21:13:04,544 [WARN] IPConfigManager:3790 - IP not found : TIM
+2025-06-09 21:13:04,546 [WARN] CodeGenerator:4198 - IP not found : null
+2025-06-09 21:13:04,551 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Inc/main.h_save
+2025-06-09 21:13:04,682 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Inc/main.h
+2025-06-09 21:13:04,685 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Src/main.c_save
+2025-06-09 21:13:04,867 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Src/main.c
+2025-06-09 21:13:05,852 [INFO] ProjectBuilder:3324 - Time for Copy HAL[1] : 105mS.
+2025-06-09 21:13:05,871 [INFO] ProjectBuilder:4912 - Project Generator version: 4.6.0.1-B1
+2025-06-09 21:13:06,081 [INFO] ConfigFileManager:1590 - The Die is : DIE431
+2025-06-09 21:13:10,218 [INFO] ProjectBuilder:5191 - Time for Generating toolchain IDE Files: 4345mS.
+2025-06-09 21:13:10,226 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 2mS.
+2025-06-09 21:13:10,233 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 0mS.
+2025-06-09 21:13:18,433 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-06-09 21:13:32,498 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 561212832 Bytes (858783744)
+2025-06-09 21:13:35,004 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 592670112 Bytes (858783744)
+2025-06-09 21:13:35,461 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 648244640 Bytes (858783744)
+2025-06-09 21:13:37,075 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2025-06-09 21:13:37,080 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: DMA
+2025-06-09 21:13:37,081 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: TIM1_8
+2025-06-09 21:13:37,081 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: TIM1_8
+2025-06-09 21:13:37,081 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: TIM1_8
+2025-06-09 21:13:37,081 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: TIM1_8
+2025-06-09 21:13:37,081 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: TIM1_8
+2025-06-09 21:13:37,081 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: TIM1_8
+2025-06-09 21:13:37,081 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2025-06-09 21:13:37,081 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2025-06-09 21:13:37,081 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: ADC
+2025-06-09 21:13:37,081 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2025-06-09 21:13:37,081 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: I2C
+2025-06-09 21:13:37,083 [INFO] CodeGenerator:882 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.14.1.202504091515//db/
+2025-06-09 21:13:37,119 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-06-09 21:13:37,120 [INFO] Argument:327 - 	 sub Args: 
+2025-06-09 21:13:37,120 [INFO] Argument:325 - Argument : Instancevalue: DMA2_Stream0
+2025-06-09 21:13:37,120 [INFO] Argument:335 - Argument : Instancevalue: DMA2_Stream0
+2025-06-09 21:13:37,120 [INFO] Argument:325 - Argument : Initvalue: null
+2025-06-09 21:13:37,120 [INFO] Argument:327 - 	 sub Args: 
+2025-06-09 21:13:37,120 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_0
+2025-06-09 21:13:37,120 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_0
+2025-06-09 21:13:37,120 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-06-09 21:13:37,120 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-06-09 21:13:37,120 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-06-09 21:13:37,120 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-06-09 21:13:37,121 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-06-09 21:13:37,122 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-06-09 21:13:37,123 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2025-06-09 21:13:37,124 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2025-06-09 21:13:37,125 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2025-06-09 21:13:37,125 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2025-06-09 21:13:37,125 [INFO] Argument:325 - Argument : Modevalue: DMA_CIRCULAR
+2025-06-09 21:13:37,125 [INFO] Argument:335 - Argument : Modevalue: DMA_CIRCULAR
+2025-06-09 21:13:37,125 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_MEDIUM
+2025-06-09 21:13:37,125 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_MEDIUM
+2025-06-09 21:13:37,125 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2025-06-09 21:13:37,125 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2025-06-09 21:13:37,125 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2025-06-09 21:13:37,125 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2025-06-09 21:13:37,125 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2025-06-09 21:13:37,125 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2025-06-09 21:13:37,125 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2025-06-09 21:13:37,125 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2025-06-09 21:13:37,125 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-06-09 21:13:37,125 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-06-09 21:13:37,125 [INFO] Argument:325 - Argument : Statevalue: null
+2025-06-09 21:13:37,125 [INFO] Argument:335 - Argument : Statevalue: null
+2025-06-09 21:13:37,125 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-06-09 21:13:37,125 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-06-09 21:13:37,126 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-06-09 21:13:37,126 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-06-09 21:13:37,126 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-06-09 21:13:37,126 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-06-09 21:13:37,126 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2025-06-09 21:13:37,126 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2025-06-09 21:13:37,126 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-06-09 21:13:37,126 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-06-09 21:13:37,126 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-06-09 21:13:37,126 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-06-09 21:13:37,131 [WARN] IP:2250 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2025-06-09 21:13:37,131 [WARN] IP:2250 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2025-06-09 21:13:37,299 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/license.tmp_save
+2025-06-09 21:13:37,485 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/license.tmp
+2025-06-09 21:13:37,576 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/gpio.tmp_save
+2025-06-09 21:13:37,694 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/gpio.tmp
+2025-06-09 21:13:38,072 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/dma.tmp_save
+2025-06-09 21:13:38,136 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/dma.tmp
+2025-06-09 21:13:38,139 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/dma_GV.tmp_save
+2025-06-09 21:13:38,194 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/dma_GV.tmp
+2025-06-09 21:13:38,206 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Src/stm32f4xx_it.c_save
+2025-06-09 21:13:38,346 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Src/stm32f4xx_it.c
+2025-06-09 21:13:38,349 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Inc/stm32f4xx_it.h_save
+2025-06-09 21:13:38,420 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Inc/stm32f4xx_it.h
+2025-06-09 21:13:38,432 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Src/stm32f4xx_hal_msp.c_save
+2025-06-09 21:13:38,595 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Src/stm32f4xx_hal_msp.c
+2025-06-09 21:13:38,599 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/system.tmp_save
+2025-06-09 21:13:38,672 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/MXTmpFiles/system.tmp
+2025-06-09 21:13:38,679 [INFO] CodeEngine:319 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Inc/stm32f4xx_hal_conf.h_save
+2025-06-09 21:13:38,753 [INFO] CodeEngine:343 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Inc/stm32f4xx_hal_conf.h
+2025-06-09 21:13:38,798 [WARN] IPConfigManager:3790 - IP not found : TIM
+2025-06-09 21:13:38,799 [WARN] CodeGenerator:4198 - IP not found : null
+2025-06-09 21:13:38,803 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Inc/main.h_save
+2025-06-09 21:13:38,882 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Inc/main.h
+2025-06-09 21:13:38,885 [INFO] CodeEngine:263 - oldGeneratedFile, /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Src/main.c_save
+2025-06-09 21:13:39,087 [INFO] CodeEngine:287 - Generated code: /Users/andrewcarr/Documents/zap_em__shoot_em/CODE/Core/Src/main.c
+2025-06-09 21:13:39,311 [INFO] ProjectBuilder:3324 - Time for Copy HAL[1] : 72mS.
+2025-06-09 21:13:39,315 [INFO] ProjectBuilder:4912 - Project Generator version: 4.6.0.1-B1
+2025-06-09 21:13:39,389 [INFO] ConfigFileManager:1590 - The Die is : DIE431
+2025-06-09 21:13:40,887 [INFO] ProjectBuilder:5191 - Time for Generating toolchain IDE Files: 1570mS.
+2025-06-09 21:13:40,890 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 0mS.
+2025-06-09 21:13:40,894 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 0mS.
