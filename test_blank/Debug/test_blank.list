@@ -37,15 +37,15 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  16 .debug_macro  000141f7  00000000  00000000  00006f9e  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   000042a9  00000000  00000000  0001b195  2**0
+ 17 .debug_line   00004027  00000000  00000000  0001b195  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    0007f3dd  00000000  00000000  0001f43e  2**0
+ 18 .debug_str    0007f41b  00000000  00000000  0001f1bc  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  0009e81b  2**0
+ 19 .comment      00000043  00000000  00000000  0009e5d7  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00000d18  00000000  00000000  0009e860  2**2
+ 20 .debug_frame  00000d18  00000000  00000000  0009e61c  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 0000006a  00000000  00000000  0009f578  2**0
+ 21 .debug_line_str 00000066  00000000  00000000  0009f334  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -85,8 +85,8 @@ Disassembly of section .text:
  80001de:	bf08      	it	eq
  80001e0:	2800      	cmpeq	r0, #0
  80001e2:	bf1c      	itt	ne
- 80001e4:	f04f 31ff 	movne.w	r1, #4294967295
- 80001e8:	f04f 30ff 	movne.w	r0, #4294967295
+ 80001e4:	f04f 31ff 	movne.w	r1, #4294967295	@ 0xffffffff
+ 80001e8:	f04f 30ff 	movne.w	r0, #4294967295	@ 0xffffffff
  80001ec:	f000 b988 	b.w	8000500 <__aeabi_idiv0>
  80001f0:	f1ad 0c08 	sub.w	ip, sp, #8
  80001f4:	e96d ce04 	strd	ip, lr, [sp, #-16]!
@@ -125,7 +125,7 @@ Disassembly of section .text:
  8000252:	429a      	cmp	r2, r3
  8000254:	d909      	bls.n	800026a <__udivmoddi4+0x62>
  8000256:	18fb      	adds	r3, r7, r3
- 8000258:	f101 30ff 	add.w	r0, r1, #4294967295
+ 8000258:	f101 30ff 	add.w	r0, r1, #4294967295	@ 0xffffffff
  800025c:	f080 80ea 	bcs.w	8000434 <__udivmoddi4+0x22c>
  8000260:	429a      	cmp	r2, r3
  8000262:	f240 80e7 	bls.w	8000434 <__udivmoddi4+0x22c>
@@ -140,7 +140,7 @@ Disassembly of section .text:
  800027e:	459c      	cmp	ip, r3
  8000280:	d909      	bls.n	8000296 <__udivmoddi4+0x8e>
  8000282:	18fb      	adds	r3, r7, r3
- 8000284:	f100 32ff 	add.w	r2, r0, #4294967295
+ 8000284:	f100 32ff 	add.w	r2, r0, #4294967295	@ 0xffffffff
  8000288:	f080 80d6 	bcs.w	8000438 <__udivmoddi4+0x230>
  800028c:	459c      	cmp	ip, r3
  800028e:	f240 80d3 	bls.w	8000438 <__udivmoddi4+0x230>
@@ -194,7 +194,7 @@ Disassembly of section .text:
  8000312:	429a      	cmp	r2, r3
  8000314:	d907      	bls.n	8000326 <__udivmoddi4+0x11e>
  8000316:	18fb      	adds	r3, r7, r3
- 8000318:	f10c 38ff 	add.w	r8, ip, #4294967295
+ 8000318:	f10c 38ff 	add.w	r8, ip, #4294967295	@ 0xffffffff
  800031c:	d202      	bcs.n	8000324 <__udivmoddi4+0x11c>
  800031e:	429a      	cmp	r2, r3
  8000320:	f200 80e0 	bhi.w	80004e4 <__udivmoddi4+0x2dc>
@@ -207,7 +207,7 @@ Disassembly of section .text:
  8000338:	429c      	cmp	r4, r3
  800033a:	d907      	bls.n	800034c <__udivmoddi4+0x144>
  800033c:	18fb      	adds	r3, r7, r3
- 800033e:	f102 30ff 	add.w	r0, r2, #4294967295
+ 800033e:	f102 30ff 	add.w	r0, r2, #4294967295	@ 0xffffffff
  8000342:	d202      	bcs.n	800034a <__udivmoddi4+0x142>
  8000344:	429c      	cmp	r4, r3
  8000346:	f200 80ca 	bhi.w	80004de <__udivmoddi4+0x2d6>
@@ -235,7 +235,7 @@ Disassembly of section .text:
  800038e:	fa02 f201 	lsl.w	r2, r2, r1
  8000392:	d909      	bls.n	80003a8 <__udivmoddi4+0x1a0>
  8000394:	193c      	adds	r4, r7, r4
- 8000396:	f100 3aff 	add.w	sl, r0, #4294967295
+ 8000396:	f100 3aff 	add.w	sl, r0, #4294967295	@ 0xffffffff
  800039a:	f080 809c 	bcs.w	80004d6 <__udivmoddi4+0x2ce>
  800039e:	45a6      	cmp	lr, r4
  80003a0:	f240 8099 	bls.w	80004d6 <__udivmoddi4+0x2ce>
@@ -250,7 +250,7 @@ Disassembly of section .text:
  80003c0:	45a4      	cmp	ip, r4
  80003c2:	d908      	bls.n	80003d6 <__udivmoddi4+0x1ce>
  80003c4:	193c      	adds	r4, r7, r4
- 80003c6:	f103 3eff 	add.w	lr, r3, #4294967295
+ 80003c6:	f103 3eff 	add.w	lr, r3, #4294967295	@ 0xffffffff
  80003ca:	f080 8082 	bcs.w	80004d2 <__udivmoddi4+0x2ca>
  80003ce:	45a4      	cmp	ip, r4
  80003d0:	d97f      	bls.n	80004d2 <__udivmoddi4+0x2ca>
@@ -312,7 +312,7 @@ Disassembly of section .text:
  800046e:	b280      	uxth	r0, r0
  8000470:	d93e      	bls.n	80004f0 <__udivmoddi4+0x2e8>
  8000472:	1879      	adds	r1, r7, r1
- 8000474:	f108 3cff 	add.w	ip, r8, #4294967295
+ 8000474:	f108 3cff 	add.w	ip, r8, #4294967295	@ 0xffffffff
  8000478:	d201      	bcs.n	800047e <__udivmoddi4+0x276>
  800047a:	4589      	cmp	r9, r1
  800047c:	d81f      	bhi.n	80004be <__udivmoddi4+0x2b6>
@@ -325,7 +325,7 @@ Disassembly of section .text:
  8000494:	4542      	cmp	r2, r8
  8000496:	d229      	bcs.n	80004ec <__udivmoddi4+0x2e4>
  8000498:	18ba      	adds	r2, r7, r2
- 800049a:	f109 31ff 	add.w	r1, r9, #4294967295
+ 800049a:	f109 31ff 	add.w	r1, r9, #4294967295	@ 0xffffffff
  800049e:	d2c4      	bcs.n	800042a <__udivmoddi4+0x222>
  80004a0:	4542      	cmp	r2, r8
  80004a2:	d2c2      	bcs.n	800042a <__udivmoddi4+0x222>
@@ -766,28 +766,13 @@ void SysTick_Handler(void)
 	...
 
 0800068c <SystemInit>:
-  *         configuration.
-  * @param  None
-  * @retval None
-  */
-void SystemInit(void)
-{
  800068c:	b480      	push	{r7}
  800068e:	af00      	add	r7, sp, #0
-  /* FPU settings ------------------------------------------------------------*/
-  #if (__FPU_PRESENT == 1) && (__FPU_USED == 1)
-    SCB->CPACR |= ((3UL << 10*2)|(3UL << 11*2));  /* set CP10 and CP11 Full Access */
  8000690:	4b06      	ldr	r3, [pc, #24]	@ (80006ac <SystemInit+0x20>)
  8000692:	f8d3 3088 	ldr.w	r3, [r3, #136]	@ 0x88
  8000696:	4a05      	ldr	r2, [pc, #20]	@ (80006ac <SystemInit+0x20>)
  8000698:	f443 0370 	orr.w	r3, r3, #15728640	@ 0xf00000
  800069c:	f8c2 3088 	str.w	r3, [r2, #136]	@ 0x88
-
-  /* Configure the Vector Table location -------------------------------------*/
-#if defined(USER_VECT_TAB_ADDRESS)
-  SCB->VTOR = VECT_TAB_BASE_ADDRESS | VECT_TAB_OFFSET; /* Vector Table Relocation in Internal SRAM */
-#endif /* USER_VECT_TAB_ADDRESS */
-}
  80006a0:	bf00      	nop
  80006a2:	46bd      	mov	sp, r7
  80006a4:	f85d 7b04 	ldr.w	r7, [sp], #4
@@ -998,7 +983,7 @@ __weak HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
     HAL_NVIC_SetPriority(SysTick_IRQn, TickPriority, 0U);
  800077c:	2200      	movs	r2, #0
  800077e:	6879      	ldr	r1, [r7, #4]
- 8000780:	f04f 30ff 	mov.w	r0, #4294967295
+ 8000780:	f04f 30ff 	mov.w	r0, #4294967295	@ 0xffffffff
  8000784:	f000 f8ed 	bl	8000962 <HAL_NVIC_SetPriority>
     uwTickPrio = TickPriority;
  8000788:	4a06      	ldr	r2, [pc, #24]	@ (80007a4 <HAL_InitTick+0x5c>)
@@ -1235,7 +1220,7 @@ __STATIC_INLINE uint32_t NVIC_EncodePriority (uint32_t PriorityGroup, uint32_t P
 
   return (
            ((PreemptPriority & (uint32_t)((1UL << (PreemptPriorityBits)) - 1UL)) << SubPriorityBits) |
- 80008d4:	f04f 32ff 	mov.w	r2, #4294967295
+ 80008d4:	f04f 32ff 	mov.w	r2, #4294967295	@ 0xffffffff
  80008d8:	69bb      	ldr	r3, [r7, #24]
  80008da:	fa02 f303 	lsl.w	r3, r2, r3
  80008de:	43da      	mvns	r2, r3
@@ -1244,7 +1229,7 @@ __STATIC_INLINE uint32_t NVIC_EncodePriority (uint32_t PriorityGroup, uint32_t P
  80008e4:	697b      	ldr	r3, [r7, #20]
  80008e6:	409a      	lsls	r2, r3
            ((SubPriority     & (uint32_t)((1UL << (SubPriorityBits    )) - 1UL)))
- 80008e8:	f04f 31ff 	mov.w	r1, #4294967295
+ 80008e8:	f04f 31ff 	mov.w	r1, #4294967295	@ 0xffffffff
  80008ec:	697b      	ldr	r3, [r7, #20]
  80008ee:	fa01 f303 	lsl.w	r3, r1, r3
  80008f2:	43d9      	mvns	r1, r3
@@ -1290,7 +1275,7 @@ __STATIC_INLINE uint32_t SysTick_Config(uint32_t ticks)
  8000924:	6053      	str	r3, [r2, #4]
   NVIC_SetPriority (SysTick_IRQn, (1UL << __NVIC_PRIO_BITS) - 1UL); /* set Priority for Systick Interrupt */
  8000926:	210f      	movs	r1, #15
- 8000928:	f04f 30ff 	mov.w	r0, #4294967295
+ 8000928:	f04f 30ff 	mov.w	r0, #4294967295	@ 0xffffffff
  800092c:	f7ff ff8e 	bl	800084c <__NVIC_SetPriority>
   SysTick->VAL   = 0UL;                                             /* Load the SysTick Counter Value */
  8000930:	4b05      	ldr	r3, [pc, #20]	@ (8000948 <SysTick_Config+0x40>)

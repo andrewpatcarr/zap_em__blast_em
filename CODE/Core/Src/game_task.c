@@ -82,12 +82,24 @@ void game_task_state_2_play(GameTask *game_task)
 		game_task->red_photoresistor_task_ptr->hit_flag = 0;
 		game_task->delay_flag = 1;
 		game_task->delay_start = __HAL_TIM_GET_COUNTER(game_task->htim);
+		game_task->sound_task_ptr->hit_snd = 1;
+		game_task->sound_task_ptr->state = 1;
+		if(playing){
+			playing = 0;
+			game_task->sound_task_ptr->state = 6;
+		}
 	}
 	if (game_task->blue_photoresistor_task_ptr->hit_flag && game_task->delay_flag == 0){
 		game_task->score_red++;
 		game_task->blue_photoresistor_task_ptr->hit_flag = 0;
 		game_task->delay_flag = 1;
 		game_task->delay_start = __HAL_TIM_GET_COUNTER(game_task->htim);
+		game_task->sound_task_ptr->hit_snd = 1;
+		game_task->sound_task_ptr->state = 1;
+		if(playing){
+			playing = 0;
+			game_task->sound_task_ptr->state = 6;
+		}
 	}
 
 	if ((__HAL_TIM_GET_COUNTER(game_task->htim) - game_task->delay_start) > game_task->delay)
@@ -129,6 +141,7 @@ void game_task_state_2_play(GameTask *game_task)
 	{
 		game_task->state = 3;
 		game_task->delay_flag = 0;
+		game_task->sound_task_ptr->win_snd = 1;
 	}
 }
 // A function to implement state 3

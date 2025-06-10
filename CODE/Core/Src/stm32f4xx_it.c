@@ -18,12 +18,16 @@
 /* USER CODE END Header */
 
 /* Includes ------------------------------------------------------------------*/
+
 #include "main.h"
 #include "stm32f4xx_it.h"
-#include "sound_task.h"
-#include "audio_data.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "sound_task.h"
+#include "start_buf.h"
+#include "hit_buf.h"
+#include "laser_buf.h"
+#include "game_over_buf.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -208,19 +212,22 @@ void TIM2_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM2_IRQn 0 */
 	if (__HAL_TIM_GET_FLAG(&htim2, TIM_FLAG_UPDATE)) {
-	    __HAL_TIM_CLEAR_IT(&htim2, TIM_IT_UPDATE);
-
+	    __HAL_TIM_CLEAR_IT(&htim2, TIM_FLAG_UPDATE);
+	    if (playing) {
 	    // every N PWM ticks, step one audio sample
-	if (++pwm_div_count >= STEP_RATIO) {
-		pwm_div_count = 0;
+			if (++pwm_div_count >= STEP_RATIO) {
+				pwm_div_count = 0;
 
-		// fetch the next sample from your C array
-		int16_t s = audio_buf[sample_index++];
-		if (sample_index >= audio_buf_len) sample_index = 0;  // loop
+				// fetch the next sample from your C array
+				int16_t s = audio_buf_ptr[sample_index++];
+				if (sample_index >= audio_buf_len){
+					playing = 0;
+				}
 
-					// map signed 16-bit [-32768..+32767] to CCR range [0..ARR]
-		uint32_t duty = ((uint32_t)(s + 32768) * (htim2.Init.Period)) / 65535;
-		__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, duty);
+							// map signed 16-bit [-32768..+32767] to CCR range [0..ARR]
+				uint32_t duty = ((uint32_t)(s + 32768) * (htim2.Init.Period)) / 65535;
+				__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, duty);
+				}
 	    }
 	}
   /* USER CODE END TIM2_IRQn 0 */

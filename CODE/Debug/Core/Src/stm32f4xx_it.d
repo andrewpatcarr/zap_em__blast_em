@@ -32,7 +32,8 @@ Core/Src/stm32f4xx_it.o: ../Core/Src/stm32f4xx_it.c ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  ../Core/Inc/stm32f4xx_it.h ../Core/Inc/sound_task.h \
- ../Core/Inc/audio_data.h
+ ../Core/Inc/start_buf.h ../Core/Inc/hit_buf.h ../Core/Inc/laser_buf.h \
+ ../Core/Inc/game_over_buf.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
@@ -68,4 +69,7 @@ Core/Src/stm32f4xx_it.o: ../Core/Src/stm32f4xx_it.c ../Core/Inc/main.h \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
 ../Core/Inc/stm32f4xx_it.h:
 ../Core/Inc/sound_task.h:
-../Core/Inc/audio_data.h:
+../Core/Inc/start_buf.h:
+../Core/Inc/hit_buf.h:
+../Core/Inc/laser_buf.h:
+../Core/Inc/game_over_buf.h:
