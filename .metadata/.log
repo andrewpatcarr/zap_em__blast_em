@@ -4630,3 +4630,244 @@ org.eclipse.core.runtime.CoreException: Setup exceptions
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 !SUBENTRY 1 com.st.stm32cube.ide.mcu.debug.launch 4 0 2025-06-09 09:05:22.739
 !MESSAGE Setup exceptions
+!SESSION 2025-06-10 11:20:37.125 -----------------------------------------------
+eclipse.buildId=Version 1.18.1
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-06-10 11:20:40.652
+!MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler' from bundle '248'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.16.500.v20240727-1037
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:562)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:557)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:643)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:88)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:59)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:37)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:273)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:568)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-06-10 11:20:44.453
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-06-10 11:20:44.455
+!MESSAGE Log4j2 initialized with config file C:\Users\kaidc\Documents\Github\zap_em__blast_em\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-06-10 11:20:51.851
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-06-10 11:20:53.531
+!MESSAGE Indexed 'CODE' (36 sources, 133 headers) in 3.95 sec: 14,071 declarations; 76,412 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0.26%)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2025-06-10 11:22:03.567
+!MESSAGE Connection to https://download.eclipse.org/tools/cdt/releases/latest/p2.index failed on null. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1028)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227)
+	at java.net.http/jdk.internal.net.http.AsyncSSLConnection.connectAsync(AsyncSSLConnection.java:56)
+	at java.net.http/jdk.internal.net.http.Http2Connection.createAsync(Http2Connection.java:468)
+	at java.net.http/jdk.internal.net.http.Http2ClientImpl.getConnectionFor(Http2ClientImpl.java:134)
+	at java.net.http/jdk.internal.net.http.ExchangeImpl.get(ExchangeImpl.java:94)
+	at java.net.http/jdk.internal.net.http.Exchange.establishExchange(Exchange.java:386)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl0(Exchange.java:570)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl(Exchange.java:423)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsync(Exchange.java:415)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:413)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:454)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:950)
+	at java.base/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2372)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:444)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsync0$2(MultiExchange.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.nio.channels.UnresolvedAddressException
+	at java.base/sun.nio.ch.Net.checkAddress(Net.java:137)
+	at java.base/sun.nio.ch.Net.checkAddress(Net.java:145)
+	at java.base/sun.nio.ch.SocketChannelImpl.checkRemote(SocketChannelImpl.java:842)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:865)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212)
+	... 21 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2025-06-10 11:22:03.797
+!MESSAGE Unable to connect to repository https://download.eclipse.org/tools/cdt/releases/latest/compositeContent.xml
+!STACK 0
+java.net.ConnectException
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1028)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227)
+	at java.net.http/jdk.internal.net.http.AsyncSSLConnection.connectAsync(AsyncSSLConnection.java:56)
+	at java.net.http/jdk.internal.net.http.Http2Connection.createAsync(Http2Connection.java:468)
+	at java.net.http/jdk.internal.net.http.Http2ClientImpl.getConnectionFor(Http2ClientImpl.java:134)
+	at java.net.http/jdk.internal.net.http.ExchangeImpl.get(ExchangeImpl.java:94)
+	at java.net.http/jdk.internal.net.http.Exchange.establishExchange(Exchange.java:386)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl0(Exchange.java:570)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl(Exchange.java:423)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsync(Exchange.java:415)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:413)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:454)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:950)
+	at java.base/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2372)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:444)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsync0$2(MultiExchange.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.nio.channels.UnresolvedAddressException
+	at java.base/sun.nio.ch.Net.checkAddress(Net.java:137)
+	at java.base/sun.nio.ch.Net.checkAddress(Net.java:145)
+	at java.base/sun.nio.ch.SocketChannelImpl.checkRemote(SocketChannelImpl.java:842)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:865)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212)
+	... 21 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2025-06-10 11:22:03.806
+!MESSAGE Connection to https://download.eclipse.org/releases/2024-09/p2.index failed on null. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1028)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227)
+	at java.net.http/jdk.internal.net.http.AsyncSSLConnection.connectAsync(AsyncSSLConnection.java:56)
+	at java.net.http/jdk.internal.net.http.Http2Connection.createAsync(Http2Connection.java:468)
+	at java.net.http/jdk.internal.net.http.Http2ClientImpl.getConnectionFor(Http2ClientImpl.java:134)
+	at java.net.http/jdk.internal.net.http.ExchangeImpl.get(ExchangeImpl.java:94)
+	at java.net.http/jdk.internal.net.http.Exchange.establishExchange(Exchange.java:386)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl0(Exchange.java:570)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl(Exchange.java:423)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsync(Exchange.java:415)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:413)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:454)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:950)
+	at java.base/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2372)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:444)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsync0$2(MultiExchange.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.nio.channels.UnresolvedAddressException
+	at java.base/sun.nio.ch.Net.checkAddress(Net.java:137)
+	at java.base/sun.nio.ch.Net.checkAddress(Net.java:145)
+	at java.base/sun.nio.ch.SocketChannelImpl.checkRemote(SocketChannelImpl.java:842)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:865)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212)
+	... 21 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2025-06-10 11:22:04.036
+!MESSAGE Unable to connect to repository https://download.eclipse.org/releases/2024-09/compositeContent.xml
+!STACK 0
+java.net.ConnectException
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1028)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227)
+	at java.net.http/jdk.internal.net.http.AsyncSSLConnection.connectAsync(AsyncSSLConnection.java:56)
+	at java.net.http/jdk.internal.net.http.Http2Connection.createAsync(Http2Connection.java:468)
+	at java.net.http/jdk.internal.net.http.Http2ClientImpl.getConnectionFor(Http2ClientImpl.java:134)
+	at java.net.http/jdk.internal.net.http.ExchangeImpl.get(ExchangeImpl.java:94)
+	at java.net.http/jdk.internal.net.http.Exchange.establishExchange(Exchange.java:386)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl0(Exchange.java:570)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl(Exchange.java:423)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsync(Exchange.java:415)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:413)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:454)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:950)
+	at java.base/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2372)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:444)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsync0$2(MultiExchange.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.nio.channels.UnresolvedAddressException
+	at java.base/sun.nio.ch.Net.checkAddress(Net.java:137)
+	at java.base/sun.nio.ch.Net.checkAddress(Net.java:145)
+	at java.base/sun.nio.ch.SocketChannelImpl.checkRemote(SocketChannelImpl.java:842)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:865)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212)
+	... 21 more
+!SESSION 2025-06-10 12:58:28.258 -----------------------------------------------
+eclipse.buildId=Version 1.18.1
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-06-10 12:58:31.393
+!MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler' from bundle '248'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.16.500.v20240727-1037
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:562)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:557)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:643)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:88)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:59)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:37)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:273)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:568)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-06-10 12:58:34.468
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-06-10 12:58:34.469
+!MESSAGE Log4j2 initialized with config file C:\Users\kaidc\Documents\Github\zap_em__blast_em\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-06-10 12:58:40.925
+!MESSAGE Started RMI Server, listening on port 41337
