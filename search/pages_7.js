@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mechanical_20design_0',['Mechanical Design',['../mechanical_page.html',1,'']]]
+  ['of_20contents_0',['Table of Contents',['../index.html#toc_section',1,'']]]
 ];

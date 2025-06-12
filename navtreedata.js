@@ -37,7 +37,6 @@ var NAVTREE =
     ] ],
     [ "Electrical Design", "electrical_page.html", null ],
     [ "Software Design", "software_page.html", null ],
-    [ "Future Implementation", "future_page.html", null ],
     [ "Topics", "topics.html", "topics" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
@@ -63,7 +62,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "adc__task_8c.html",
-"struct_controller_task.html#a6e623499d0c8b2090741bf433769d9fe"
+"struct_controller_task.html#a7b0eb94c2e1b446c66adbb12ab4f42f4"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';
