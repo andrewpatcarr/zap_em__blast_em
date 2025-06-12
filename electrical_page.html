@@ -94,19 +94,22 @@ $(function(){initNavTree('electrical_page.html','',''); });
   <div class="headertitle"><div class="title">Electrical Design </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>The circuit design was developed using Fusion 360, and the custom PCB manages all core aspects of game control. Debugging and firmware development were facilitated using an ST-Link programmer, with UART communication enabling real-time testing and output monitoring.</p>
+<div class="textblock"><div style="margin-left: 5%;"> <h2><a href="https://a360.co/3HyZWpD" target="_blank" rel="noopener noreferrer">🗺️ Schematic Drawings</a></h2>
+</div><div style="margin-left: 5%;"> </div><p>The circuit design was developed using Fusion 360, and the custom PCB manages all core aspects of game control. Debugging and firmware development were facilitated using an ST-Link programmer, with UART communication enabling real-time testing and output monitoring.</p>
 <p>The PCB includes integrated circuitry for multi-voltage power regulation (6V, 5V, and 3.3V rails), dual H-bridge motor driver support, and a wide array of GPIO and analog interfaces connected to an STM32F411CEU microcontroller.</p>
 <p>In total, 39 wire-to-board crimp connections were required to interface all peripheral components, utilizing nearly every available pin on the microcontroller. One notable revision involved the MOSFETs responsible for laser control—these were initially soldered in the wrong orientation and had to be carefully desoldered, rotated, and reinstalled to restore full functionality.</p>
 <p>Future iterations of the PCB may involve more deliberate pin assignments, particularly for the audio interface to improve performance and simplify routing. Additionally, a larger microcontroller may be necessary to accommodate expanded functionality, as the current implementation pushed the limits of both available I/O pins and onboard memory. The inclusion of audio files—stored in flash or handled through runtime buffers—nearly exhausted the system’s RAM, highlighting the need for increased memory capacity in subsequent designs.</p>
 <p> 
 <div style="display: flex; justify-content: left; align-items: flex-start; gap: 20px;">
-  <img src="media/photos/wiringdiagram.png" alt="Wiring Diagram" 
-       style="height: 500px;"/>
   <img src="media/photos/mountedPCB.jpg" alt="Mounted PCB" 
        style="height: 500px;"/>
+  <img src="media/photos/MCU Design v32.png" alt="PCB CAD" 
+       style="height: 500px;"/>
+  <img src="media/photos/Schematic.png" alt="Schematic" 
+       style="height: 500px;"/>
 </div>
- </p>
-</div></div><!-- contents -->
+</p>
+<div style="margin-left: 10%;"> <img src="media/photos/wiringdiagram.png" alt="Wiring Diagram" style="height: 500px;" class="inline"/> </div> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 </div><!-- container -->
