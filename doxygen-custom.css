@@ -7,5 +7,10 @@ img[src="transparent_logo.png"] {
 body, .contents, p {
   font-size: 18px; /* Default is often around 14px. Adjust as needed */
   line-height: 1.6;
+}
 
+/* Make list item text larger */
+ul li, ol li {
+  font-size: 18px; /* Adjust as needed */
+  line-height: 1.6;
 }

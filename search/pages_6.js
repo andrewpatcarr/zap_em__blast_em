@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mechanical_20design_0',['Mechanical Design',['../mechanical_page.html',1,'']]]
+  ['high_20level_20wiring_20diagram_0',['High-Level Wiring Diagram',['../electrical_page.html#high_level',1,'']]]
 ];

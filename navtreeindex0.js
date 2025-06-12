@@ -29,6 +29,7 @@ var NAVTREEINDEX0 =
 "dir_413f4e031a85da0d68269c6fd2f76e1c.html":[9,0,1],
 "dir_f93dfce691d792349f1c14ede440e2e6.html":[9,0,0],
 "electrical_page.html":[5],
+"electrical_page.html#high_level":[5,0],
 "encoder__driver_8c.html":[9,0,1,2],
 "encoder__driver_8c.html#a6263b89a6c8983bf9ccf4de858924af9":[9,0,1,2,1],
 "encoder__driver_8c.html#a804624cc3cce1ef0ecbfc16baffbee00":[9,0,1,2,0],
@@ -114,7 +115,8 @@ var NAVTREEINDEX0 =
 "main_8h.html#ae70bce6c39d0b570a7523b86738cec4b":[9,0,0,8,1],
 "main_8h_source.html":[9,0,0,8],
 "mechanical_page.html":[4],
-"mechanical_page.html#Manufacturing":[4,0],
+"mechanical_page.html#Design":[4,0],
+"mechanical_page.html#Manufacturing":[4,1],
 "motor__driver_8c.html":[9,0,1,6],
 "motor__driver_8c.html#a241698a6835454fbaa4afb10281389bf":[9,0,1,6,3],
 "motor__driver_8c.html#a391fa1e490bd712720989b58fa0d9904":[9,0,1,6,0],
@@ -156,6 +158,7 @@ var NAVTREEINDEX0 =
 "shoot__task_8h.html#ad05d64064d0b409a3821eb3f7f5a5480":[9,0,0,11,5],
 "shoot__task_8h_source.html":[9,0,0,11],
 "software_page.html":[6],
+"software_page.html#FSM_section":[6,0],
 "sound__task_8c.html":[9,0,1,9],
 "sound__task_8c.html#a00b81d0044d217031afdc1f89b23bee9":[9,0,1,9,11],
 "sound__task_8c.html#a09f703c309bf72787bc294de99e3d4cc":[9,0,1,9,4],
@@ -246,8 +249,5 @@ var NAVTREEINDEX0 =
 "struct_controller_task.html#a0456e86c5e39324ddfd18e4185b27788":[8,0,1,14],
 "struct_controller_task.html#a0a11d3973daa2e12c27ccd2588cad086":[8,0,1,9],
 "struct_controller_task.html#a161dff7a43c703b282d7053536407b8c":[8,0,1,2],
-"struct_controller_task.html#a2d1c9595719149da662440337e3e6065":[8,0,1,1],
-"struct_controller_task.html#a36de3f2cbf02e318ebd6dff3dea7861c":[8,0,1,8],
-"struct_controller_task.html#a461cae71b420a0cbbb17f75db63af2b8":[8,0,1,16],
-"struct_controller_task.html#a6e623499d0c8b2090741bf433769d9fe":[8,0,1,5]
+"struct_controller_task.html#a2d1c9595719149da662440337e3e6065":[8,0,1,1]
 };

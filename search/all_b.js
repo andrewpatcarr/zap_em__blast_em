@@ -12,5 +12,6 @@ var searchData=
   ['lcd_5fprint_9',['lcd_print',['../lcd_8c.html#a8531c55ba576c0b39c0d72bd6617c91f',1,'lcd_print(char *str):&#160;lcd.c'],['../lcd_8h.html#a8531c55ba576c0b39c0d72bd6617c91f',1,'lcd_print(char *str):&#160;lcd.c']]],
   ['lcd_5fsend_5fcommand_10',['lcd_send_command',['../lcd_8c.html#a64386ad6108c11b9b87062542ec23c6b',1,'lcd_send_command(uint8_t cmd):&#160;lcd.c'],['../lcd_8h.html#a64386ad6108c11b9b87062542ec23c6b',1,'lcd_send_command(uint8_t cmd):&#160;lcd.c']]],
   ['lcd_5fsend_5fdata_11',['lcd_send_data',['../lcd_8c.html#ad137f84654d6d30d773a74fc8ae3f307',1,'lcd_send_data(uint8_t data):&#160;lcd.c'],['../lcd_8h.html#ad137f84654d6d30d773a74fc8ae3f307',1,'lcd_send_data(uint8_t data):&#160;lcd.c']]],
-  ['lcd_5fset_5fcursor_12',['lcd_set_cursor',['../lcd_8c.html#a68e592603e66b23b0360f910f3356877',1,'lcd_set_cursor(uint8_t row, uint8_t col):&#160;lcd.c'],['../lcd_8h.html#a68e592603e66b23b0360f910f3356877',1,'lcd_set_cursor(uint8_t row, uint8_t col):&#160;lcd.c']]]
+  ['lcd_5fset_5fcursor_12',['lcd_set_cursor',['../lcd_8c.html#a68e592603e66b23b0360f910f3356877',1,'lcd_set_cursor(uint8_t row, uint8_t col):&#160;lcd.c'],['../lcd_8h.html#a68e592603e66b23b0360f910f3356877',1,'lcd_set_cursor(uint8_t row, uint8_t col):&#160;lcd.c']]],
+  ['level_20wiring_20diagram_13',['High-Level Wiring Diagram',['../electrical_page.html#high_level',1,'']]]
 ];
