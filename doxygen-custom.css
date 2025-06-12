@@ -2,3 +2,10 @@ img[src="transparent_logo.png"] {
   max-width: 100px !important;
   height: auto !important;
 }
+
+  /* Make normal text (e.g., paragraphs, body text) larger */
+body, .contents, p {
+  font-size: 18px; /* Default is often around 14px. Adjust as needed */
+  line-height: 1.6;
+
+}
