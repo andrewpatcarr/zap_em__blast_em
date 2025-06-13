@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['level_20wiring_20diagram_0',['High-Level Wiring Diagram',['../electrical_page.html#high_level',1,'']]]
+  ['key_20features_0',['Key Features',['../software_page.html#feature_section',1,'']]]
 ];

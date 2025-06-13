@@ -44,7 +44,7 @@ var NAVTREE =
       [ "High-Level Wiring Diagram", "electrical_page.html#high_level", null ]
     ] ],
     [ "Software Design", "software_page.html", [
-      [ "Features", "software_page.html#Key", null ],
+      [ "Key Features", "software_page.html#feature_section", null ],
       [ "Task Finite State Machines", "software_page.html#FSM_section", null ]
     ] ],
     [ "Topics", "topics.html", "topics" ],

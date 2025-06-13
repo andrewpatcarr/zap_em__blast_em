@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['machines_0',['Task Finite State Machines',['../software_page.html#FSM_section',1,'']]],
-  ['mechanical_20design_1',['Mechanical Design',['../mechanical_page.html',1,'']]]
+  ['level_20wiring_20diagram_0',['High-Level Wiring Diagram',['../electrical_page.html#high_level',1,'']]]
 ];

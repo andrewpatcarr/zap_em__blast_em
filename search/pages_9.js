@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['of_20contents_0',['Table of Contents',['../index.html#toc_section',1,'']]]
+  ['machines_0',['Task Finite State Machines',['../software_page.html#FSM_section',1,'']]],
+  ['mechanical_20design_1',['Mechanical Design',['../mechanical_page.html',1,'']]]
 ];

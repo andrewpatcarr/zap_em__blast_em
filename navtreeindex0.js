@@ -163,7 +163,7 @@ var NAVTREEINDEX0 =
 "shoot__task_8h_source.html":[10,0,0,11],
 "software_page.html":[7],
 "software_page.html#FSM_section":[7,1],
-"software_page.html#Key":[7,0],
+"software_page.html#feature_section":[7,0],
 "sound__task_8c.html":[10,0,1,9],
 "sound__task_8c.html#a00b81d0044d217031afdc1f89b23bee9":[10,0,1,9,11],
 "sound__task_8c.html#a09f703c309bf72787bc294de99e3d4cc":[10,0,1,9,4],

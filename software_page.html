@@ -99,11 +99,11 @@ Design</h1>
 <p>Our project utilizes a task-based architecture with finite state machines (FSM). It is written completely in C within the STM Cube IDE which enables us to design setup pins, timers, interrupts and DMA all within the ioc file.</p>
 <p>Our FSMs were implemented using function pointers with "psuedo-object-oriented" methods. This was crucial in making our C code scalable, cooperative, organized, and easy to debug. In <a class="el" href="main_8c.html" title=": Main program body">main.c</a>, we run each task, with some conditions, in a round robin fashion. The laser, shield, and rotational controls are enabled or disabled depending on the state of the game. Calibration of the game, which includes photoresistors and dc motors, occurs at start up.</p>
 <p>Our game was split into 6 tasks; however, the controller, photoresistor, and shoot tasks were duplicated for the blue and red fighters. Each task and its FSM are provided below.</p>
-<h1 class="doxsection"><a class="anchor" id="Key"></a>
-Features</h1>
+<h1 class="doxsection"><a class="anchor" id="feature_section"></a>
+Key Features</h1>
 <h1 class="doxsection"><a class="anchor" id="FSM_section"></a>
 Task Finite State Machines</h1>
-<div style="margin-left: 0%;"> <img src="media/photos/FSMS.jpg" alt="FSM's" style="height: 500px;" class="inline"/> </div> </div></div><!-- contents -->
+<div style="margin-left: 0%;"> <img src="media/photos/FSMS.jpg" alt="FSM's" style="height: 1200px;" class="inline"/> </div> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
