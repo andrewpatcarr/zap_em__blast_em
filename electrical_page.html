@@ -99,16 +99,22 @@ Design</h1>
 <div style="margin-left: 0%;"> <h2><a href="https://a360.co/3HyZWpD" target="_blank" rel="noopener noreferrer">🗺️ Schematic Drawings</a></h2>
 </div><div style="margin-left: 0%;"> </div><p>The circuit design was developed using Fusion 360, and the custom PCB manages all core aspects of game control. Debugging and firmware development were facilitated using an ST-Link programmer, with UART communication enabling real-time testing and output monitoring.</p>
 <p>The PCB includes integrated circuitry for multi-voltage power regulation (6V, 5V, and 3.3V rails), dual H-bridge motor driver support, and a wide array of GPIO and analog interfaces connected to an STM32F411CEU microcontroller.</p>
-<p>In total, 39 wire-to-board crimp connections were required to interface all peripheral components, utilizing nearly every available pin on the microcontroller. One notable revision involved the MOSFETs responsible for laser control—these were initially soldered in the wrong orientation and had to be carefully desoldered, rotated, and reinstalled to restore full functionality.</p>
+<p>In total, 39 wire-to-board crimp connections were required to interface all peripheral components, utilizing nearly every available pin on the microcontroller.</p>
 <p> 
  <div style="display: flex; justify-content: left; align-items: flex-start; gap: 20px;">
    <img src="media/photos/AndrewSolder.jpg" alt="Soldering" 
         style="height: 500px;"/>
-     <img src="media/photos/MCU Design v32.png" alt="PCB CAD" 
+     <img src="media/photos/MCU_Design_v32.png" alt="PCB CAD" 
         style="height: 500px;"/>
    <img src="media/photos/Schematic.png" alt="Schematic" 
         style="height: 500px;"/>
  </div>
+ </p>
+<p><b>Laser control</b></p>
+<p>To control our lasers, we use a PFET along with an open-drain GPIO. This allows us to use single MOSFET and a single pin to drive our laser. The selection of MOSFET for this purpose was critical. It needed to have a source voltage that was also compatible as the gate voltage. We connect source and gate with a 10 kOHm resitor. When our pin is in open mode, our source voltage goes to our gate which closes the switch. When our pin is drain mode, our source voltage is pulled to ground within our microcontroller which opens the MOSFET switch, turning our laser on. When our board was delivered, our lasers did not work as planned. This ended being due to an incorrect schematic symbol and pcb footprint. The ones provided on digikey were for a NFET which meant that our pins were all rotated by one. Luckily, this meant, with some careful heatgun work, that we could rotate our MOSFET by 120 degrees to get it working again.</p>
+<p> 
+ <img src="media\photos\mosfet_swap.jpg" alt="mosfet_swap" 
+        style="height: 500px;"/>
  </p>
 <p>Future iterations of the PCB may involve more deliberate pin assignments, particularly for the audio interface to improve performance and simplify routing. Additionally, a larger microcontroller may be necessary to accommodate expanded functionality, as the current implementation pushed the limits of both available I/O pins and onboard memory. The inclusion of audio files—stored in flash or handled through runtime buffers—nearly exhausted the system’s RAM, highlighting the need for increased memory capacity in subsequent designs.</p>
 <h1 class="doxsection"><a class="anchor" id="high_level"></a>
