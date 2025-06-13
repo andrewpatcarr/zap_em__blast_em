@@ -40,7 +40,7 @@ var NAVTREE =
       [ "High-Level Wiring Diagram", "electrical_page.html#high_level", null ]
     ] ],
     [ "Software Design", "software_page.html", [
-      [ "Finite State Machines", "software_page.html#FSM_section", null ]
+      [ "Task Finite State Machines", "software_page.html#FSM_section", null ]
     ] ],
     [ "Topics", "topics.html", "topics" ],
     [ "Data Structures", "annotated.html", [
@@ -67,7 +67,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "adc__task_8c.html",
-"struct_controller_task.html#a36de3f2cbf02e318ebd6dff3dea7861c"
+"struct_controller_task.html#a2d1c9595719149da662440337e3e6065"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"struct_controller_task.html#a2d1c9595719149da662440337e3e6065":[8,0,1,1],
 "struct_controller_task.html#a36de3f2cbf02e318ebd6dff3dea7861c":[8,0,1,8],
 "struct_controller_task.html#a461cae71b420a0cbbb17f75db63af2b8":[8,0,1,16],
 "struct_controller_task.html#a6e623499d0c8b2090741bf433769d9fe":[8,0,1,5],
