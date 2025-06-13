@@ -159,7 +159,8 @@ var NAVTREEINDEX0 =
 "shoot__task_8h.html#ad05d64064d0b409a3821eb3f7f5a5480":[9,0,0,11,5],
 "shoot__task_8h_source.html":[9,0,0,11],
 "software_page.html":[6],
-"software_page.html#FSM_section":[6,0],
+"software_page.html#FSM_section":[6,1],
+"software_page.html#Key":[6,0],
 "sound__task_8c.html":[9,0,1,9],
 "sound__task_8c.html#a00b81d0044d217031afdc1f89b23bee9":[9,0,1,9,11],
 "sound__task_8c.html#a09f703c309bf72787bc294de99e3d4cc":[9,0,1,9,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "struct_a_d_c_task.html#af982c0fe5d77061049c468b599100134":[8,0,0,2],
 "struct_controller_task.html":[8,0,1],
 "struct_controller_task.html#a0456e86c5e39324ddfd18e4185b27788":[8,0,1,14],
-"struct_controller_task.html#a0a11d3973daa2e12c27ccd2588cad086":[8,0,1,9],
-"struct_controller_task.html#a161dff7a43c703b282d7053536407b8c":[8,0,1,2]
+"struct_controller_task.html#a0a11d3973daa2e12c27ccd2588cad086":[8,0,1,9]
 };
