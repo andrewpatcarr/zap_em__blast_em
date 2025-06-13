@@ -14,13 +14,14 @@ var searchData=
   ['hal_5ftim_5fpwm_5fmspdeinit_11',['HAL_TIM_PWM_MspDeInit',['../stm32f4xx__hal__msp_8c.html#af5f524564b3a99a9f87f45227309e866',1,'stm32f4xx_hal_msp.c']]],
   ['hal_5ftim_5fpwm_5fmspinit_12',['HAL_TIM_PWM_MspInit',['../stm32f4xx__hal__msp_8c.html#a24d5b9c609d8b753d95508419f4c1901',1,'stm32f4xx_hal_msp.c']]],
   ['hardfault_5fhandler_13',['HardFault_Handler',['../stm32f4xx__it_8c.html#a2bffc10d5bd4106753b7c30e86903bea',1,'HardFault_Handler(void):&#160;stm32f4xx_it.c'],['../stm32f4xx__it_8h.html#a2bffc10d5bd4106753b7c30e86903bea',1,'HardFault_Handler(void):&#160;stm32f4xx_it.c']]],
-  ['hi2c1_14',['hi2c1',['../main_8c.html#af7b2c26e44dadaaa798a5c3d82914ba7',1,'hi2c1:&#160;main.c'],['../lcd_8h.html#af7b2c26e44dadaaa798a5c3d82914ba7',1,'hi2c1:&#160;main.c']]],
-  ['high_20level_20wiring_20diagram_15',['High-Level Wiring Diagram',['../electrical_page.html#high_level',1,'']]],
-  ['hit_5fflag_16',['hit_flag',['../struct_photoresistor_task.html#a50699512b038124f9871fcde12b5e208',1,'PhotoresistorTask']]],
-  ['hit_5fsnd_17',['hit_snd',['../struct_sound_task.html#a000ef37f42673a03d4120df8047e54e7',1,'SoundTask']]],
-  ['hse_5fvalue_18',['HSE_VALUE',['../group___s_t_m32_f4xx___system___private___includes.html#gaeafcff4f57440c60e64812dddd13e7cb',1,'system_stm32f4xx.c']]],
-  ['hsi_5fvalue_19',['HSI_VALUE',['../group___s_t_m32_f4xx___system___private___includes.html#gaaa8c76e274d0f6dd2cefb5d0b17fbc37',1,'system_stm32f4xx.c']]],
-  ['htim_20',['htim',['../structencoder__t.html#a5dc7d1c65997ccaed48a93a3f4ffc486',1,'encoder_t::htim'],['../struct_sound_task.html#a5dc7d1c65997ccaed48a93a3f4ffc486',1,'SoundTask::htim']]],
-  ['htim_5fdt_21',['htim_dt',['../struct_controller_task.html#a36de3f2cbf02e318ebd6dff3dea7861c',1,'ControllerTask']]],
-  ['htim_5fencoder_22',['htim_encoder',['../struct_controller_task.html#a0a11d3973daa2e12c27ccd2588cad086',1,'ControllerTask']]]
+  ['hardware_14',['Hardware',['../hardware_page.html',1,'']]],
+  ['hi2c1_15',['hi2c1',['../main_8c.html#af7b2c26e44dadaaa798a5c3d82914ba7',1,'hi2c1:&#160;main.c'],['../lcd_8h.html#af7b2c26e44dadaaa798a5c3d82914ba7',1,'hi2c1:&#160;main.c']]],
+  ['high_20level_20wiring_20diagram_16',['High-Level Wiring Diagram',['../electrical_page.html#high_level',1,'']]],
+  ['hit_5fflag_17',['hit_flag',['../struct_photoresistor_task.html#a50699512b038124f9871fcde12b5e208',1,'PhotoresistorTask']]],
+  ['hit_5fsnd_18',['hit_snd',['../struct_sound_task.html#a000ef37f42673a03d4120df8047e54e7',1,'SoundTask']]],
+  ['hse_5fvalue_19',['HSE_VALUE',['../group___s_t_m32_f4xx___system___private___includes.html#gaeafcff4f57440c60e64812dddd13e7cb',1,'system_stm32f4xx.c']]],
+  ['hsi_5fvalue_20',['HSI_VALUE',['../group___s_t_m32_f4xx___system___private___includes.html#gaaa8c76e274d0f6dd2cefb5d0b17fbc37',1,'system_stm32f4xx.c']]],
+  ['htim_21',['htim',['../structencoder__t.html#a5dc7d1c65997ccaed48a93a3f4ffc486',1,'encoder_t::htim'],['../struct_sound_task.html#a5dc7d1c65997ccaed48a93a3f4ffc486',1,'SoundTask::htim']]],
+  ['htim_5fdt_22',['htim_dt',['../struct_controller_task.html#a36de3f2cbf02e318ebd6dff3dea7861c',1,'ControllerTask']]],
+  ['htim_5fencoder_23',['htim_encoder',['../struct_controller_task.html#a0a11d3973daa2e12c27ccd2588cad086',1,'ControllerTask']]]
 ];

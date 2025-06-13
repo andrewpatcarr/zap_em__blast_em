@@ -32,6 +32,10 @@ var NAVTREE =
       [ "Premise", "gameplay_page.html#Game", null ],
       [ "Features", "gameplay_page.html#Features", null ]
     ] ],
+    [ "Hardware", "hardware_page.html", [
+      [ "Mechanical", "hardware_page.html#Mechanical", null ],
+      [ "Electrical", "hardware_page.html#Electrical", null ]
+    ] ],
     [ "Mechanical Design", "mechanical_page.html", [
       [ "Design", "mechanical_page.html#Design", null ],
       [ "Manufacturing", "mechanical_page.html#Manufacturing", null ]
@@ -68,7 +72,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "adc__task_8c.html",
-"struct_controller_task.html#a161dff7a43c703b282d7053536407b8c"
+"struct_controller_task.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';
